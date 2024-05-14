@@ -1,0 +1,210 @@
+/* this section is for about us  */
+
+*, body {
+   margin: 0;
+   padding: 0;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+
+/* nav bar starts here */
+.nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #fff;
+    align-items: center;
+    /* padding-left: 5rem; */
+    position: relative;
+    left: 0;
+}
+
+.nav-logo {
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-logo img {
+    height: 75px;
+}
+
+.nav-links-container {
+    padding: 16px 0;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links > .nav-link-item {
+    display:inline-block;
+    margin: 0 24px;
+    position: relative;
+}
+
+.nav-links > .nav-link-item > a {
+    text-decoration: none;
+    display: flex;
+    padding: 16px 0;
+    color: #777;
+    font-weight: 500;
+    transition: 0.3s ease;
+    align-items: center;
+}
+
+.nav-links > .nav-link-item:hover > a {
+    color: #7c1414;
+}
+
+.nav-link-item > a > .fa-chevron-down {
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin-left: 8px;
+    transition: 0.3s ease;
+    pointer-events: none;
+}
+
+.nav-link-item:hover > a > .fa-chevron-down {
+    transform: rotate(-180deg);
+}
+
+.nav-links > .nav-link-item > .dropdown-menu {
+    width: 200px;
+    position: absolute;
+    top: 80%;       
+    left: -16px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    transform: translateY(0);
+    transition: .3s ease;
+    visibility:hidden;
+    opacity: 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.nav-links > .nav-link-item:hover > .dropdown-menu {
+    transform: translate(8px);
+    visibility: visible;
+    opacity: 1;
+}
+
+.nav-links > .nav-link-item > .dropdown-menu > .dropdown-menu-item {
+    list-style: none;
+}
+
+.nav-links > .nav-link-item > .dropdown-menu > .dropdown-menu-item > a {
+    text-decoration: none;
+    display: block;
+    color: #777;
+    font-weight: 500;
+    transition: .3s ease;
+    padding: 16px;
+}
+
+.nav-links > .nav-link-item > .dropdown-menu > .dropdown-menu-item > a:hover {
+    color: #5e3c83;
+    background-color: #2d58d927;
+}
+
+.nav-container .background {
+    position: fixed;
+    z-index: 998;
+    background-color: #00000071;
+    left: 0;
+    top: 0;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s ease-in;
+}
+
+.nav-container .background:active {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.3s ease-out;
+}
+
+.nav-container .open-menu {
+    display: block;
+    font-size: 24px;
+    color: #fff;
+}
+
+.nav-container .close-menu {
+    display: block;
+    font-size: 24px;
+    color: #fff;
+}
+
+#sign-in-btn {
+    padding: 8px 18px;
+    border: none;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+/* #sign-out-btn {
+    padding: 8px 18px;
+    border: none;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-right: 20px;
+} */
+/* navbar and sidebar styles ends here  */
+
+
+#main-aboutus-container {
+    height: auto;
+    width: 100%;
+    
+    
+    
+}
+
+#image-wrapper-aboutus {
+    z-index: -1;
+}
+
+#image-aboutus  {
+    /* border-radius: 16px ; */
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    /* background-position: bottom; */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat;    */
+    position: absolute ;
+    /* left: 3rem; */
+    top: auto;
+    opacity: 0.9;
+}
+
+#aboutus-hero1 {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+}
+
+#top-container-header {
+    position:absolute;
+    left: 7rem;
+    top: 15rem;
+    font-size: 100px;
+    font-weight: 700;
+    font-variant: small-caps;
+    color: whitesmoke;
+    text-shadow: 4px 4px 2px rgb(54, 54, 54)  ;
+
+}

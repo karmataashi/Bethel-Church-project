@@ -1,2 +1,2 @@
-# Bethel-Church-project
-Bethel-projecttt
+# bethel-church-project
+Bethel AG Church Project

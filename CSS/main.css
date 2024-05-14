@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* navbar and sidebar styles starts here  */
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #fff;
+    align-items: center;
+    /* padding-right: 2rem; */
+}
+
+.nav-logo {
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-logo img {
+    height: 75px;
+}
+
+.nav-links-container {
+    padding: 16px 0;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links > .nav-link-item {
+    display: inline-block;
+    margin: 0 24px;
+    position: relative;
+}
+
+.nav-links > .nav-link-item > a {
+    text-decoration: none;
+    display: flex;
+    padding: 16px 0;
+    color: #777;
+    font-weight: 500;
+    transition: 0.3s ease;
+    align-items: center;
+}
+
+.nav-links > .nav-link-item:hover > a {
+    color: #6554AF;
+}
+
+.nav-link-item > a > .fa-chevron-down {
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin-left: 8px;
+    transition: 0.3s ease;
+    pointer-events: none;
+}
+
+.nav-link-item:hover > a > .fa-chevron-down {
+    transform: rotate(-180deg);
+}
+
+.nav-links > .nav-link-item > .dropdown-menu {
+    width: 200px;
+    position: absolute;
+    top: 80%;
+    left: -16px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    transform: translateY(0);
+    transition: .3s ease;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.nav-links > .nav-link-item:hover > .dropdown-menu {
+    transform: translate(8px);
+    visibility: visible;
+    opacity: 1;
+}
+
+.nav-links > .nav-link-item > .dropdown-menu > .dropdown-menu-item {
+    list-style: none;
+}
+
+.nav-links > .nav-link-item > .dropdown-menu > .dropdown-menu-item > a {
+    text-decoration: none;
+    display: block;
+    color: #777;
+    font-weight: 500;
+    transition: .3s ease;
+    padding: 16px;
+}
+
+.nav-links > .nav-link-item > .dropdown-menu > .dropdown-menu-item > a:hover {
+    color: #5e3c83;
+    background-color: #2d58d927;
+}
+
+.nav-container .background {
+    position: fixed;
+    z-index: 998;
+    background-color: #00000071;
+    left: 0;
+    top: 0;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s ease-in;
+}
+
+.nav-container .background:active {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.3s ease-out;
+}
+
+.nav-container .open-menu {
+    display: block;
+    font-size: 24px;
+    color: #fff;
+}
+
+.nav-container .close-menu {
+    display: block;
+    font-size: 24px;
+    color: #fff;
+}
+
+#sign-in-btn {
+    padding: 8px 18px;
+    border: none;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+/* #sign-out-btn {
+    padding: 8px 18px;
+    border: none;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-right: 20px;
+} */
+/* navbar and sidebar styles ends here  */
+
+
+/* Hero container starts here */
+#hero-container {
+    background-image: url('/assests/hero-bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px auto;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+    opacity: 0.8;
+    /* border-radius: 24px; */
+}
+
+#title-box {
+    display: inline-block;
+}
+
+#animated-text {
+    font-weight: 500px;
+    font-size: 80px;
+    letter-spacing: 10px;
+    border-right: 5px solid;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        typing 2s infinite,
+        cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% {
+        border-color: maroon
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+#welcome-text {
+    color: white;
+    letter-spacing: 2px;
+    margin: 20px 0;
+}
+
+#join-btn {
+    border: 2px solid;
+    background-color: transparent;
+    color: white;
+    padding: 17px 60px;
+    /* border: 2px solid; */
+    background-color: transparent;
+    color: whitesmoke;
+    /* border-radius: 16px; */
+    font-size: 1.5rem;
+    margin-right: 20px;
+    font-weight: 600;
+}
+/* Hero container ends here */
+
+#join-btn:hover {
+    background-color: rgb(124, 14, 14);
+}
+
+/* second container */
+#second-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 200px;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+}
+
+#about-us {
+    padding: 0px 80px;
+}
+
+#about-us-title {
+    text-align: center;
+    font-size: 40px;
+    color: #777;
+}
+
+#about-us-hr {
+    border: none;
+    background-color: #777;
+    height: 2px;
+}
+
+#about-us-text {
+    font-size: 18pxpx;
+    text-align: center;
+    font-weight: 300;
+    color: #777;
+    margin: 20px 0px;
+}
+
+#about-link {
+    padding: 8px 18px;
+    border: none;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+#about-link > a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#second-container-bg {
+    padding: 40px;
+}
+
+#second-container-img {
+    height: 400px;
+    width: 600px;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(250px);
+    transition: all 1s ease;
+    opacity: 0;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/* second container */
+
+#try {
+    height: 1200px;
+}
+
+@media (max-width:768px)  {
+    .nav-links-container {
+        display: none;
+
+    }
+
+    #sign-in-btn {
+        display: none;
+    }
+
+}
