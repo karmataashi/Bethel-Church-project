@@ -10,6 +10,7 @@ html {
 body {
     box-sizing: border-box;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
 }
 
 /* navbar and sidebar styles starts here  */
@@ -65,7 +66,7 @@ body {
 }
 
 .nav-links > .nav-link-item:hover > a {
-    color: rgb(124, 14, 14);
+    color: rgb(192, 18, 53);
     border-bottom: 2px solid;
 }
 
@@ -162,7 +163,7 @@ body {
 }
 
 #sign-in-btn:hover {
-    background-color: maroon;
+    background-color: rgb(192, 18, 53);
 }
 /* #sign-out-btn {
     padding: 8px 18px;
@@ -193,7 +194,7 @@ body {
     /* object-fit: cover; */
     /* overflow: hidden; */
     position: relative;
-    opacity: 0.8;
+    opacity: 0.9;
     background-color: black;
     /* border-radius: 24px; */
 }
@@ -217,12 +218,12 @@ body {
 }
 
 #talkeko-text-main-hero-ko {
-    color: maroon;
+    color: rgb(192, 18, 53);
 }
 
 @keyframes cursor {
     50% {
-        border-color: maroon
+        border-color: rgb(192, 18, 53)
     }
 }
 
@@ -254,14 +255,14 @@ body {
 /* Hero container ends here */
 
 #join-btn:hover {
-    background-color: rgb(124, 14, 14);
+    background-color: rgb(192, 18, 53);
 }
 
 /* second container */
 #second-container {
     /* border: 1px solid blue; */
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     /* box-sizing: border-box; */
     text-align: center;
     align-items: center;
@@ -275,23 +276,24 @@ body {
 }
 
 #about-us {
-    /* padding: 0px 80px; */
-    text-wrap:wrap;
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
     /* border: 1px solid red; */
-    height: 70vh;
+    height: auto;
     width: auto;
-    justify-content: space-evenly;
-    text-align:justify;
-    align-items: center;
+    /* justify-content: space-evenly; */
+    text-align: justify;
+    /* align-items: center; */
+    position: relative; 
+    left: 4rem;
 }
 
 #about-us-title {
-    text-align: center;
-    font-size: 5rem;
+    /* text-align: center; */
+    font-size: 4rem;
     color: rgb(235, 235, 235);
     font-variant: small-caps;
+    margin-bottom: 25px;
 }
 
 #about-us-hr {
@@ -316,12 +318,14 @@ body {
 }
 
 #about-us-text {
+    text-wrap:wrap;
     font-size: 18px;
-    text-align: center;
+    /* text-align: center; */
     font-weight: 300;
     color: #d3d3d3;
-    /* margin: 20px 0px; */
-    line-height: 45px;
+    margin: 25px 0px;
+    line-height: 40px;
+    /* letter-spacing: 1px; */
 }
 
 #about-link {
@@ -332,6 +336,10 @@ body {
     color: whitesmoke;
     /* border-radius: 4px; */
     /* font-size: 1rem; */
+}
+
+#about-link:hover {
+    background-color: rgb(192, 18, 53);
 }
 
 #about-link > a {
@@ -356,8 +364,8 @@ body {
 
 .reveal {
     position: relative;
-    transform: translateY(250px);
-    transition: all 1s ease;
+    transform: translateY(90px);
+    transition: all 1.5s ease;
     opacity: 0;
 }
 
@@ -368,9 +376,6 @@ body {
 
 /* second container */
 
-#try {
-    height: 1200px;
-}
 
 @media (max-width:768px)  {
     .nav-links-container {
