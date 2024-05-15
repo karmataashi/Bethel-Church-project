@@ -4,6 +4,17 @@ window.addEventListener('scroll', function() {
   let parallax = document.querySelector('#hero-container');
   parallax.style.backgroundPositionY = -(scrolled * 1.3) + 'px'; 
 })
+
+function showMenu() {
+    const show = document.querySelector('.sidebar');
+    show.style.display = 'flex';
+}
+
+function closeMenu() {
+    const close = document.querySelector('.sidebar');
+    close.style.display = 'none';
+}
+
 //parallax effect ends here
 window.addEventListener('scroll',reveal);
 function reveal() {
