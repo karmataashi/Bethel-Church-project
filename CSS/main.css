@@ -152,6 +152,10 @@ body {
     border-radius: 4px;
     font-size: 1rem;
 }
+
+#sign-in-btn:hover {
+    background-color: maroon;
+}
 /* #sign-out-btn {
     padding: 8px 18px;
     border: none;
