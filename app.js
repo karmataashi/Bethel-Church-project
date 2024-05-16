@@ -6,6 +6,7 @@ window.addEventListener('scroll', function () {
 })
 //parallax effect ends here
 
+// sidebar ko lagi 
 function showMenu() {
     const show = document.querySelector('.sidebar');
     show.style.display = 'flex';
@@ -16,6 +17,8 @@ function closeMenu() {
     close.style.display = 'none';
 }
 
+
+// reveal hunu ko lagi animation
 window.addEventListener('scroll', reveal);
 function reveal() {
     let reveals = document.querySelectorAll('.reveal');

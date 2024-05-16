@@ -742,6 +742,7 @@ body {
     
 }
 
+/* footer ma bhako bhitra ko top-container */
 .footer-ko-top {
     padding: 140px 0;
     /* border: 1px solid rgb(55, 0, 255); */
@@ -754,12 +755,12 @@ body {
     line-height: 25px;
 }
 
-.Location-timings h2 {
+/* .Location-timings h2 {
     color: #fb8b23;
     font-variant: small-caps;
     font-weight: 700;
     font-size: 20px;
-}
+} */
 
 .Location-timings p {
     font-size: 15px;
@@ -785,10 +786,11 @@ body {
 
 }
 
+/* footer bhitra ko quick links */
 .footer-ko-quicklinks {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .footerko-links {
@@ -826,12 +828,58 @@ body {
     
 }
 
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    line-height: 30px; 
+}
+
+
+.icons-ko-tala {
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 1.5rem;
+    
+}
+
+/* footer ma bhako arko container/ bottom container */
+
 .footer-ko-bottom {
     border-top: 1px solid rgb(192, 192, 192);
     padding: 30px 0;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
     
+    
+}
+/* footer ko social links */
+.footer-social-links {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    position: relative;
+    right: 2rem;
+}
+.footer-social-links li a img:hover {
+    transform: translate3d(0px, 3px, 0px);
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) hue-rotate(240deg) saturate(500%);
+    border-color: #ffa07a;
+}
 
+
+.footer-social-links li a img {
+    filter: brightness(0) saturate(100%) invert(60%);
+    transition: filter 0.5s;
+}
+
+.footer-social-links img {
+    height: 30px;
+    
+}
+
+.footer-social-links li {
+    list-style: none;
 }
 
 .footer-ko-bottom p {
@@ -841,7 +889,8 @@ body {
     text-align: start;
     padding-left: 2rem;
 }
-/* resources */
+
+
 
 @media (max-width:768px)  {
     .nav-links-container {
