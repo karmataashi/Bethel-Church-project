@@ -22,12 +22,13 @@ body {
     justify-content: space-evenly;
     background-color: #fff;
     align-items: center;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     /* padding-right: 2rem; */
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
+    font-family: "Lato", sans-serif;
 }
 
 .nav-logo {
@@ -68,7 +69,8 @@ body {
 
 .nav-links > .nav-link-item:hover > a {
     color: rgb(192, 18, 53);
-    border-bottom: 2px solid;
+    border-top: 2px solid;
+    transform: translate3d(0px, 10px, 0px);
 }
 
 .nav-link-item > a > .fa-chevron-down {
@@ -430,7 +432,7 @@ body {
 
 /* events page */
 
-/* second container */
+/* second container starts */
 #second-container {
     /* border: 1px solid blue; */
     display: flex;
@@ -466,6 +468,7 @@ body {
     color: rgb(235, 235, 235);
     font-variant: small-caps;
     margin-bottom: 25px;
+    /* text-align: start; */
 }
 
 #about-us-hr {
@@ -492,7 +495,7 @@ body {
 #about-us-text {
     text-wrap:wrap;
     font-size: 18px;
-    /* text-align: center; */
+    /* text-align:start; */
     font-weight: 300;
     color: #d3d3d3;
     margin: 25px 0px;
@@ -541,7 +544,136 @@ body {
     opacity: 1;
 }
 
-/* second container */
+/* second container ends*/
+
+
+/* yo section chai footer ko lagi  */
+#footer {
+    background-image: url('../assests/pattern.jpg');
+    /* background-color: #272727; */
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat;
+    overflow: hidden;
+    position: relative;
+    opacity: 0.98;
+}
+
+.footer-ko-container {
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-top: 150px; */
+
+    
+}
+
+.footer-ko-top {
+    padding: 140px 0;
+    /* border: 1px solid rgb(55, 0, 255); */
+    
+}
+
+.Location-timings {
+    display: flex;
+    flex-direction: column;
+    line-height: 25px;
+}
+
+.Location-timings h2 {
+    color: #fb8b23;
+    font-variant: small-caps;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.Location-timings p {
+    font-size: 15px;
+    font-weight: 600;
+
+}
+
+.footer-bhitra {
+    display: table-cell;
+    padding: 0 30px;
+    /* border-left: 1px solid #535353; */
+    color: #fff;
+    letter-spacing: 0.5pt;
+    border-right: 1px solid #757575;
+
+}
+
+.footer-bhitra h2 {
+    color: #fb8b23;
+    font-variant: small-caps;
+    font-weight: 700;
+    font-size: 20px;
+
+}
+
+.footer-ko-quicklinks {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footerko-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.footer-ko-li a  {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: start;
+}
+
+#lastlink {
+    list-style: none;
+}
+
+#lastlink a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: start;
+    padding-left: 1rem;
+}
+
+.footer-ko-li {
+    border-right: 1px solid #d3d3d3;
+    padding: 0px 1rem;
+    list-style: none;
+
+    
+}
+
+.footer-ko-bottom {
+    border-top: 1px solid rgb(192, 192, 192);
+    padding: 30px 0;
+    width: 100%;
+    
+
+}
+
+.footer-ko-bottom p {
+    color: whitesmoke;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: start;
+    padding-left: 2rem;
+}
 
 
 @media (max-width:768px)  {
