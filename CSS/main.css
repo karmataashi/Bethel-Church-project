@@ -242,12 +242,8 @@ body {
     flex-direction: column;
     margin: 0px auto;
     background-repeat: no-repeat;
-    /* object-fit: cover; */
-    /* overflow: hidden; */
     position: relative;
-    opacity: 0.9;
-    background-color: black;
-    /* border-radius: 24px; */
+    background-color: rgb(37, 37, 37);
 }
 
 #title-box {
@@ -432,7 +428,178 @@ body {
 
 /* events page */
 
+
+/* ministry */
+#ministry {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    padding: 100px;
+    background-color: rgb(37, 37, 37);
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+
+.ministry-content {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ministry-heading {
+    font-size: 40px;
+    color: white;
+    margin-top: 20px;
+    margin-left: 220px;
+    margin-bottom: 40px;
+}
+
+.kid-ministry {
+    display: flex;
+}
+
+.kid-ministry-img {
+    height: 300px;
+    border-radius: 12px;
+    margin-left: -50px;
+    box-shadow: #000 0px 11px 15px 0px;
+}
+
+.kid-ministry-content {
+    /* background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px); */
+    height:300px;
+    width: 900px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    color: #d3d3d3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 20px;
+}
+
+.kid-ministry-btn {
+    height: 50px;
+    width: 170px;
+    border: 2px solid whitesmoke;
+    background-color: transparent;
+    color: whitesmoke;
+    text-decoration: none;
+    padding:  0;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px
+}
+
+.kid-ministry-btn:hover {
+    background-color: rgb(192, 18, 53);
+}
+
+.adult-ministry {
+    display: flex;
+}
+
+.adult-ministry-img {
+    height: 300px;
+    border-radius: 12px;
+    box-shadow: #000 0px 11px 15px 0px;
+}
+
+.adult-ministry-content {
+    /* background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px); */
+    height:300px;
+    width: 900px;
+    box-sizing: border-box;
+    color: #d3d3d3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 20px;
+    padding: 0px 20px;
+}
+
+.adult-ministry-btn {
+    height: 50px;
+    width: 170px;
+    border: 2px solid whitesmoke;
+    background-color: transparent;
+    color: whitesmoke;
+    text-decoration: none;
+    padding:  0;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px
+}
+
+.adult-ministry-btn:hover {
+    background-color: rgb(192, 18, 53);
+}
+
+.mom-ministry {
+    display: flex;
+}
+
+.mom-ministry-img {
+    height: 300px;
+    border-radius: 12px;
+    box-shadow: #000 0px 11px 15px 0px;
+}
+
+.mom-ministry-content {
+    /* background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px); */
+    height:300px;
+    width: 900px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    color: #d3d3d3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 20px;
+}
+
+.mom-ministry-btn {
+    height: 50px;
+    width: 170px;
+    border: 2px solid whitesmoke;
+    background-color: transparent;
+    color: whitesmoke;
+    text-decoration: none;
+    padding:  0;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px
+}
+
+.mom-ministry-btn:hover {
+    background-color: rgb(192, 18, 53);
+}
+
+/* ministry */
+
+/* second container */
+
 /* second container starts */
+
+
+
 #second-container {
     /* border: 1px solid blue; */
     display: flex;
