@@ -11,6 +11,7 @@ body {
     box-sizing: border-box;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     scroll-behavior: smooth;
+    transition: all 0.3s ease;
 }
 
 /* navbar and sidebar styles starts here  */
@@ -227,7 +228,7 @@ body {
 
 /* Hero container starts here */
 #hero-container {
-    background-image: url('/assests/yo.jpg');
+    background-image: url('/assests/hero-bg.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -305,6 +306,129 @@ body {
 #join-btn:hover {
     background-color: rgb(192, 18, 53);
 }
+
+
+
+/* events page */
+#events-container {
+    height: 100vh;
+    width:  100%;
+    padding: 100px 0px;
+    background-color: rgb(37, 37, 37);
+    background-image: url('/assests/yo.jpg');
+    background-size: cover;
+    background-position: fixed;
+    
+}
+
+.events-content-container {
+    display: flex;
+    margin: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.event-heading {
+    margin-left: 220px;
+    color: rgb(235, 235, 235);
+    margin-top: 40px;
+}
+
+.event-heading h1 {
+    font-size: 46px;
+}
+
+.event-1{
+    background-image: url('/assests/Children.jpeg');
+}
+.event-2 {
+    background-image: url('/assests/baptism.jpg');
+}
+.event-3 {
+    background-image: url('/assests/picnic.jpg');
+}
+
+.card {
+    width: 400px;;
+    height: 400px;
+    position: relative;
+    margin: 0 4em;
+    /* background-image: url('/assests/hero-bg.jpg'); */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    box-shadow: #000 0px 11px 15px 0px;
+    border-radius: 4px;
+    display: block;
+}
+
+.card .overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 4px;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.card .events-btn {
+    padding: 0.6em 1.3em;
+    text-decoration: none;
+    color: #fff;
+    border: 2px #fff solid;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.card .events-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.card .events-btn, .card h1 {
+    transition: 0.3s;
+    transform: translateY(-20px);
+}
+
+.card:hover .events-btn, .card:hover h1 {
+    transform: translateY(0);
+}
+
+
+.events-pg-btn {
+    height: 70px;
+    width: 170px;
+    border: 2px solid whitesmoke;
+    background-color: transparent;
+    color: whitesmoke;
+    text-decoration: none;
+    padding:  4px 20px;
+    letter-spacing: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.events-pg-btn:hover {
+    background-color: rgb(192, 18, 53);
+}
+
+/* events page */
 
 /* second container */
 #second-container {
@@ -437,5 +561,5 @@ body {
     .show-menu-btn {
         display: block;
     }
-
+    
 }
