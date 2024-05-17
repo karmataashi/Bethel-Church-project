@@ -2,7 +2,7 @@
 window.addEventListener('scroll', function () {
     let scrolled = window.scrollY;
     let parallax = document.querySelector('#hero-container');
-    parallax.style.backgroundPositionY = -(scrolled * 1.4) + 'px';
+    parallax.style.backgroundPositionY = -(scrolled * 1.3) + 'px';
 })
 //parallax effect ends here
 
@@ -25,7 +25,7 @@ function reveal() {
     for (let i = 0; i < reveals.length; i++) {
         let windowheight = window.innerHeight;
         let revealtop = reveals[i].getBoundingClientRect().top;
-        let revealpoint = 100;
+        let revealpoint = 120;
 
         if (revealtop < windowheight - revealpoint) {
             reveals[i].classList.add('active');

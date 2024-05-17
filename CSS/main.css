@@ -246,7 +246,7 @@ body {
     margin: 0px auto;
     background-repeat: no-repeat;
     position: relative;
-    background-color: rgb(37, 37, 37);
+    background-color: whitesmoke;
 }
 
 #title-box {
@@ -317,9 +317,16 @@ body {
     background-color: rgb(37, 37, 37);
     background-image: url('/assests/silverbackground.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: fixed;
     object-fit: contain;
+    overflow: hidden;
     /* opacity: 0.95; */
+}
+
+.events-content {
+    display: flex;
+    flex-direction: column;
+
 }
 
 .events-content-container {
@@ -474,7 +481,7 @@ text-shadow: 4px 5px 3px solid black;
     justify-content: center;
     align-items: center; */
     padding: 100px;
-    background-color: rgb(37, 37, 37);
+    background-color: whitesmoke;
     flex-direction: column;
     padding-bottom: 100px;
 }
@@ -638,7 +645,7 @@ text-shadow: 4px 5px 3px solid black;
 
 
 #second-container {
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     display: flex;
     justify-content: space-around;
     /* box-sizing: border-box; */
