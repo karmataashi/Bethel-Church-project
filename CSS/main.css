@@ -2,14 +2,16 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    
+
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 body {
     box-sizing: border-box;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     scroll-behavior: smooth;
     transition: all 0.3s ease;
 }
@@ -44,20 +46,20 @@ body {
 
 .nav-links-container {
     padding: 16px 0;
-    
+
 }
 
 .nav-links {
     list-style: none;
 }
 
-.nav-links > .nav-link-item {
+.nav-links>.nav-link-item {
     display: inline-block;
     margin: 0 24px;
     position: relative;
 }
 
-.nav-links > .nav-link-item > a {
+.nav-links>.nav-link-item>a {
     text-decoration: none;
     display: flex;
     padding: 10px 0;
@@ -67,13 +69,13 @@ body {
     align-items: center;
 }
 
-.nav-links > .nav-link-item:hover > a {
+.nav-links>.nav-link-item:hover>a {
     color: rgb(192, 18, 53);
     border-top: 2px solid;
     transform: translate3d(0px, 10px, 0px);
 }
 
-.nav-link-item > a > .fa-chevron-down {
+.nav-link-item>a>.fa-chevron-down {
     display: inline-block;
     height: 16px;
     width: 16px;
@@ -82,11 +84,11 @@ body {
     pointer-events: none;
 }
 
-.nav-link-item:hover > a > .fa-chevron-down {
+.nav-link-item:hover>a>.fa-chevron-down {
     transform: rotate(-180deg);
 }
 
-.nav-links > .nav-link-item > .dropdown-menu {
+.nav-links>.nav-link-item>.dropdown-menu {
     width: 200px;
     position: absolute;
     top: 80%;
@@ -101,17 +103,17 @@ body {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.nav-links > .nav-link-item:hover > .dropdown-menu {
+.nav-links>.nav-link-item:hover>.dropdown-menu {
     transform: translate(8px);
     visibility: visible;
     opacity: 1;
 }
 
-.nav-links > .nav-link-item > .dropdown-menu > .dropdown-menu-item {
+.nav-links>.nav-link-item>.dropdown-menu>.dropdown-menu-item {
     list-style: none;
 }
 
-.nav-links > .nav-link-item > .dropdown-menu > .dropdown-menu-item > a {
+.nav-links>.nav-link-item>.dropdown-menu>.dropdown-menu-item>a {
     text-decoration: none;
     display: block;
     color: #777;
@@ -120,10 +122,10 @@ body {
     padding: 16px;
 }
 
-.nav-links > .nav-link-item > .dropdown-menu > .dropdown-menu-item > a:hover {
+.nav-links>.nav-link-item>.dropdown-menu>.dropdown-menu-item>a:hover {
     color: #5e3c83;
     background-color: #2d58d927;
-    
+
 }
 
 .nav-container .background {
@@ -193,7 +195,7 @@ body {
     margin: 40px 20px;
 }
 
-.sidebar li a{
+.sidebar li a {
     text-decoration: none;
     color: black;
     font-size: 22px;
@@ -216,6 +218,7 @@ body {
 #sign-in-btn:hover {
     background-color: rgb(192, 18, 53);
 }
+
 /* #sign-out-btn {
     padding: 8px 18px;
     border: none;
@@ -299,82 +302,109 @@ body {
     margin-right: 20px;
     font-weight: 600;
 }
-/* Hero container ends here */
 
 #join-btn:hover {
     background-color: rgb(192, 18, 53);
 }
+/* Hero container ends here */
 
 
-
-/* events page */
+/* events page styles */
 #events-container {
     height: 100vh;
-    width:  100%;
-    padding: 100px 0px;
+    width: 100%;
+    padding: 70px 0px;
     background-color: rgb(37, 37, 37);
-    background-image: url('/assests/yo.jpg');
+    background-image: url('/assests/silverbackground.jpg');
     background-size: cover;
-    background-position: fixed;
-    
+    background-position: center;
+    object-fit: contain;
+    /* opacity: 0.95; */
 }
 
 .events-content-container {
     display: flex;
-    margin: 80px;
+    margin: 150px;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .event-heading {
-    margin-left: 220px;
-    color: rgb(235, 235, 235);
-    margin-top: 40px;
+    position: relative;
+    top: 2rem;
+    left: 8rem;
+    /* margin-left: 220px; */
+    color: #3a3a3a;
+    /* margin-top: 40px; */
+    font-variant: small-caps ;
 }
 
 .event-heading h1 {
-    font-size: 46px;
+    font-size: 70px;
 }
 
-.event-1{
+#events-ko-hr {
+    border: none;
+    background-color: #3a3a3a;
+    height: 1px;
+    width: 35vw;
+    overflow: visible;
+    border-radius: 4px;
+    position: relative;
+}
+
+#events-ko-hr::after {
+    content: '';
+    width: 45vw;
+    height: 2px;
+    background: rgb(63, 63, 63);
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 4px;
+}
+
+.event-1 {
     background-image: url('/assests/Children.jpeg');
 }
+
 .event-2 {
     background-image: url('/assests/baptism.jpg');
 }
+
 .event-3 {
     background-image: url('/assests/picnic.jpg');
 }
 
 .card {
-    width: 400px;;
+    width: 400px;
     height: 400px;
     position: relative;
     margin: 0 4em;
-    /* background-image: url('/assests/hero-bg.jpg'); */
     background-size: cover;
     background-position: center;
     color: #fff;
     box-shadow: #000 0px 11px 15px 0px;
-    border-radius: 4px;
+    /* border-radius: 4px; */
     display: block;
 }
 
 .card .overlay {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    text-align: center;
     position: relative;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(5px);
     opacity: 0;
     transition: 0.3s;
-    border-radius: 4px;
+    /* border-radius: 4px; */
 }
 
 .card:hover .overlay {
@@ -387,7 +417,7 @@ body {
     color: #fff;
     border: 2px #fff solid;
     letter-spacing: 1px;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     margin: 10px;
 }
 
@@ -395,12 +425,14 @@ body {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-.card .events-btn, .card h1 {
+.card .events-btn,
+.card h1 {
     transition: 0.3s;
     transform: translateY(-20px);
 }
 
-.card:hover .events-btn, .card:hover h1 {
+.card:hover .events-btn,
+.card:hover h1 {
     transform: translateY(0);
 }
 
@@ -408,23 +440,30 @@ body {
 .events-pg-btn {
     height: 70px;
     width: 170px;
-    border: 2px solid whitesmoke;
+    border: 2px solid rgb(54, 54, 54);
     background-color: transparent;
-    color: whitesmoke;
+    color: rgb(70, 70, 70);
     text-decoration: none;
-    padding:  4px 20px;
+    padding: 4px 20px;
     letter-spacing: 2px;
     margin-left: auto;
     margin-right: auto;
-    display: block;
+    /* display: block; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
+/* #events-container a {
+    box-shadow: 4px 5px 3px solid black;;
+text-shadow: 4px 5px 3px solid black;
+
+} */
 
 .events-pg-btn:hover {
-    background-color: rgb(192, 18, 53);
+    background-color: rgb(196, 54, 54);
+    color: whitesmoke;
 }
+
 
 /* events page */
 
@@ -470,7 +509,7 @@ body {
 .kid-ministry-content {
     /* background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px); */
-    height:300px;
+    height: 300px;
     width: 900px;
     padding-left: 40px;
     box-sizing: border-box;
@@ -488,7 +527,7 @@ body {
     background-color: transparent;
     color: whitesmoke;
     text-decoration: none;
-    padding:  0;
+    padding: 0;
     letter-spacing: 2px;
     margin-top: 20px;
     display: block;
@@ -515,7 +554,7 @@ body {
 .adult-ministry-content {
     /* background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px); */
-    height:300px;
+    height: 300px;
     width: 900px;
     box-sizing: border-box;
     color: #d3d3d3;
@@ -533,7 +572,7 @@ body {
     background-color: transparent;
     color: whitesmoke;
     text-decoration: none;
-    padding:  0;
+    padding: 0;
     letter-spacing: 2px;
     margin-top: 20px;
     display: block;
@@ -560,7 +599,7 @@ body {
 .mom-ministry-content {
     /* background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px); */
-    height:300px;
+    height: 300px;
     width: 900px;
     padding-left: 40px;
     box-sizing: border-box;
@@ -578,7 +617,7 @@ body {
     background-color: transparent;
     color: whitesmoke;
     text-decoration: none;
-    padding:  0;
+    padding: 0;
     letter-spacing: 2px;
     margin-top: 20px;
     display: block;
@@ -592,9 +631,7 @@ body {
     background-color: rgb(192, 18, 53);
 }
 
-/* ministry */
-
-/* second container */
+/* ministry ends*/
 
 /* second container starts */
 
@@ -625,7 +662,7 @@ body {
     /* justify-content: space-evenly; */
     text-align: justify;
     /* align-items: center; */
-    position: relative; 
+    position: relative;
     left: 4rem;
 }
 
@@ -660,7 +697,7 @@ body {
 }
 
 #about-us-text {
-    text-wrap:wrap;
+    text-wrap: wrap;
     font-size: 18px;
     /* text-align:start; */
     font-weight: 300;
@@ -684,7 +721,7 @@ body {
     background-color: rgb(192, 18, 53);
 }
 
-#about-link > a {
+#about-link>a {
     color: white;
     text-decoration: none;
     font-weight: 50;
@@ -717,7 +754,7 @@ body {
 /* yo section chai footer ko lagi  */
 #footer {
     background-image: url('../assests/pattern.jpg');
-    /* background-color: #272727; */
+    background-color: #3a3a3a;
     height: auto;
     width: 100%;
     object-fit: cover;
@@ -739,14 +776,14 @@ body {
     align-items: center;
     /* padding-top: 150px; */
 
-    
+
 }
 
 /* footer ma bhako bhitra ko top-container */
 .footer-ko-top {
     padding: 140px 0;
     /* border: 1px solid rgb(55, 0, 255); */
-    
+
 }
 
 .Location-timings {
@@ -799,7 +836,7 @@ body {
     align-items: center
 }
 
-.footer-ko-li a  {
+.footer-ko-li a {
     text-decoration: none;
     color: whitesmoke;
     font-size: 15px;
@@ -825,13 +862,13 @@ body {
     padding: 0px 1rem;
     list-style: none;
 
-    
+
 }
 
 .footer-contact {
     display: flex;
     flex-direction: column;
-    line-height: 30px; 
+    line-height: 30px;
 }
 
 
@@ -839,7 +876,7 @@ body {
     font-size: 15px;
     font-weight: 600;
     padding-left: 1.5rem;
-    
+
 }
 
 /* footer ma bhako arko container/ bottom container */
@@ -850,9 +887,10 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    
-    
+
+
 }
+
 /* footer ko social links */
 .footer-social-links {
     display: flex;
@@ -861,6 +899,7 @@ body {
     position: relative;
     right: 2rem;
 }
+
 .footer-social-links li a img:hover {
     transform: translate3d(0px, 3px, 0px);
     filter: brightness(0) saturate(100%) invert(100%) sepia(100%) hue-rotate(240deg) saturate(500%);
@@ -875,7 +914,7 @@ body {
 
 .footer-social-links img {
     height: 30px;
-    
+
 }
 
 .footer-social-links li {
@@ -892,7 +931,7 @@ body {
 
 
 
-@media (max-width:768px)  {
+@media (max-width:768px) {
     .nav-links-container {
         display: none;
     }
@@ -909,5 +948,5 @@ body {
     .show-menu-btn {
         display: block;
     }
-    
+
 }

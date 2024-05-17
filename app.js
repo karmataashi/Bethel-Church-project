@@ -2,7 +2,7 @@
 window.addEventListener('scroll', function () {
     let scrolled = window.scrollY;
     let parallax = document.querySelector('#hero-container');
-    parallax.style.backgroundPositionY = -(scrolled * 1.3) + 'px';
+    parallax.style.backgroundPositionY = -(scrolled * 1.4) + 'px';
 })
 //parallax effect ends here
 
