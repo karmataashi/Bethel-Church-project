@@ -1043,3 +1043,14 @@ text-shadow: 4px 5px 3px solid black;
     margin-top: 100px;
     gap: 80px;
 }
+
+#verse h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.verse-text {
+    margin: 20px;
+    text-align: center;
+    font-size: 22px;
+}
