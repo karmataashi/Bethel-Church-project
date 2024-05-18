@@ -2,7 +2,7 @@
 window.addEventListener('scroll', function () {
     let scrolled = window.scrollY;
     let parallax = document.querySelector('#hero-container');
-    parallax.style.backgroundPositionY = -(scrolled * 1.3) + 'px';
+    parallax.style.backgroundPositionY = -(scrolled * 1.6) + 'px';
 })
 //parallax effect ends here
 
@@ -62,7 +62,7 @@ function getRandomVerse() {
 
 const finalVerse = getRandomVerse();
 
-const verse = document.getElementById('verse');
+const verse = document.getElementById('church-timings');
 const verseText = document.createElement('p');
 verseText.classList.add('verse-text');
 verseText.innerText = finalVerse;
