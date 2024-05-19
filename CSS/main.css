@@ -561,6 +561,164 @@ text-shadow: 4px 5px 3px solid black;
 
 }
 
+/* footer ma bhako arko container/ bottom container */
+
+.footer-ko-bottom {
+    border-top: 1px solid rgb(192, 192, 192);
+    padding: 30px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+/* footer ko social links */
+.footer-social-links {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    position: relative;
+    right: 2rem;
+}
+
+.footer-social-links li a img:hover {
+    transform: translate3d(0px, 3px, 0px);
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) hue-rotate(240deg) saturate(500%);
+    border-color: #ffa07a;
+}
+
+
+.footer-social-links li a img {
+    filter: brightness(0) saturate(100%) invert(60%);
+    transition: filter 0.5s;
+}
+
+.footer-social-links img {
+    height: 30px;
+
+}
+
+.footer-social-links li {
+    list-style: none;
+}
+
+.footer-ko-bottom p {
+    color: whitesmoke;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: start;
+    padding-left: 2rem;
+}
+/* footer ends  */
+
+
+@media (max-width:768px) {
+    .nav-links-container {
+        display: none;
+    }
+
+    .nav-container {
+        justify-content: space-between;
+        padding: 0px 40px;
+    }
+
+    #sign-in-btn {
+        display: none;
+    }
+
+    .show-menu-btn {
+        display: block;
+    }
+
+}
+
+#resources {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    width: 100%
+}
+
+#resources {
+    height: 100vh;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.resources-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resources-content img {
+    border-radius: 12px;
+}
+
+#resources-img-1, #resources-img-5 {
+    opacity: 0.4;
+    height: 200px;
+    z-index: -2;
+}
+
+#resources-img-2, #resources-img-4 {
+    opacity: 0.8;
+    height: 280px;
+    z-index: -1;
+}
+
+#resources-img-3 {
+    height: 320px;
+}
+
+#resources-img-2 {
+    transform: translateX(70%);
+}
+
+#resources-img-4 {
+    transform: translateX(-70%);
+}
+
+#resources-img-1 {
+    transform: translateX(160%);
+}
+
+#resources-img-5 {
+    transform: translateX(-160%);
+}
+
+.resources-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#resources h1 {
+    margin-left: 200px;
+    margin-top: 180px;
+    margin-bottom: 80px;
+    font-size: 60px;
+}
+
+.media-btn, .media-service-btn {
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: 8px 18px;
+    font-size: 28px;
+}
+
+.resources-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    gap: 80px;
+}
+
 #church-timings {
     height: 100vh;
     width: 100%;
