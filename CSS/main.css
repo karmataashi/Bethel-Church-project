@@ -10,6 +10,11 @@
 body {
     box-sizing: border-box;
     background-color: white;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 /* rose dew #FFDFDF
@@ -79,11 +84,9 @@ body {
     transform: scale(1.1);
 }
 
-.show-menu-btn {
-    background-color: black;
-    color: white;
-    padding: 8px 16px;
-    border-radius: 4px;
+.menu-btn {
+    height: 30px;
+    width: 30px;
     display: none;
 }
 
@@ -209,7 +212,7 @@ body {
 
 /* events page styles */
 #events-container {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     padding: 70px 0px;
     background-size: cover;
@@ -888,6 +891,23 @@ text-shadow: 4px 5px 3px solid black;
     align-items: center;
 }
 
+.event-heading h3, .event-heading p{
+    animation: fade linear both;
+    animation-timeline: view();
+    animation-range: 50% cover 50%;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
 
 @media (max-width:768px) {
     .nav-links-container {
@@ -903,24 +923,68 @@ text-shadow: 4px 5px 3px solid black;
         display: none;
     }
 
-    .show-menu-btn {
+    .ministry-content {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border;
+        flex-direction: column;
+    }
+
+    #ministry {
+        padding: 0;
+    }
+
+    .verse-text {
+        margin-left: 0px;
+        width: 50%;
+    }
+
+    
+    .circle {
+        margin-left: 480px;
+
+    }
+    
+    .timing-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nav-container {
+        padding: 10px 0px;;
+    }
+
+    .card {
+        width: 200px;
+        height: 200px;
+        position: relative;
+    }    
+
+    .ministry-img {
+        height: 200px;
+        width: 200px;
+        background-size: cover;
+        background-position: center;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .kid-ministry-content, .adult-ministry-content, .mom-ministry-content {
+        width: 200px;
+    }
+    
+    .ministry-content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav-logo {
+        margin-left: -20px;
+    }
+
+    .menu-btn {
         display: block;
-    }
-}
-
-.event-heading h3, .event-heading p{
-    animation: fade linear both;
-    animation-timeline: view();
-    animation-range: 50% cover 50%;
-}
-
-@keyframes fade {
-    0% {
-        opacity: 0;
-        transform: translateY(-30px) scale(0.9);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0) scale(1);
+        margin-right: 20px;
     }
 }
