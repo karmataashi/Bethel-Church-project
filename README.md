@@ -5,3 +5,5 @@ all the codes belongs to the rookie developers:
 2. karma
 3. aroma 
 4. issac
+
+Unauthorized duplication or publication of any materials from this site is expressly prohibited.
