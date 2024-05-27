@@ -34,7 +34,7 @@ html {
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 999;
 }
 
 .nav-logo {
@@ -136,65 +136,26 @@ html {
 
 /* here the styles for the main section starts */
 
-#image-wrapper-aboutus {
-    background-color: whitesmoke;
-    z-index: -1;
-}
-
-#image-aboutus {
-    /* border-radius: 16px ; */
-    height: 45vh;
-    width: 100%;
-    object-fit: cover;
-    /* background-position: bottom; */
-    /* background-size: cover; */
-    /* background-repeat: no-repeat;    */
-    position: relative;
-    /* left: 3rem; */
-    top: 0;
-    /* z-index: -1; */
-}
-
-#aboutus-hero1 {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width: 100%;
-    /* z-index: -999; */
-}
-
-#top-container-header {
-    position: absolute;
-    left: 7rem;
-    top: 15rem;
-    font-size: 100px;
-    font-weight: 600;
-    font-variant: small-caps;
-    color: whitesmoke;
-    text-shadow: 4px 4px 2px rgb(54, 54, 54);
-    /* z-index: 999; */
-
-}
-
-/* hero-1 styles ends here */
 
 /*  hero-2 styles starts here*/
 
 #aboutus-hero2 {
-    background-color: whitesmoke;
+    background-color: rgb(243, 243, 243);
     display: flex;
-    padding: 110px 250px;
+    padding: 120px 250px;
     align-items: center;
     /* justify-content: space-between; */
-    /* position: relative; */
-    /* top: 0; */
+    position: relative;
+    top: 0;
+    z-index: 2;
 }
 
 .hero2-img {
-    height: 50vh;
-    width: auto;
-    object-fit: contain;
-    background-repeat: no-repeat;
+    height: 400px;
+    width: 500px;
+    box-shadow: 1px 1px 1px rgb(54, 54, 54);
+    /* width: auto; */
+    /* background-repeat: no-repeat; */
 
 }
 
@@ -213,65 +174,69 @@ html {
 .right-hero2 p {
     text-align: justify;
     font-size: 15px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     line-height: 25px;
     font-weight: normal;
+    margin-bottom: 40px;
 }
+
 
 /* here the about-us- hero3 section styles starts */
 
 .aboutus-hero3 {
-    height: 90vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
-    background-color: rgb(236, 227, 215);
-
-}
-
-.mission-img-wrapper {
-    height: 100%;
+    background-image: url("/assests/aboutus-mission.jpg");
+    height: 50vh;
+    background-position: bottom  ;
+    background-size:cover;
+    /* width: 100%; */
+    object-fit: cover;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-self: flex-end;
-}
-
-#mission-img {
-    height: 50vh;
-    width: 100%;
-    object-fit: cover;
-
-
-}
-
-
-.mission-head {
-    font-size: 90px;
-    font-variant: small-caps;
-    letter-spacing: 4px;
-    font-weight: lighter;
-}
-
-.mission-text-wrapper {
-    text-align: justify;
-    border-left: 1px solid rgb(63, 63, 63);
-    height: 80%;
-    width: 600px;
-    display: flex;
+    justify-content: center;
     align-items: center;
-    align-self: center;
-    font-weight: light;
-    /* background-color: whitesmoke; */
-    /* border-radius: 8px; */
+    /* justify-content: space-evenly; */
+    /* background-color: rgb(247, 238, 228); */
 }
 
-.mission-text {
-    font-size: 30px;
-    letter-spacing: 2px;
-    padding-left: 70px;
+.aboutus-hero3 .mission-title  {
+    color: #fff;
+    position: relative;
+    z-index: 3;
+    /* top: 15rem; */
 }
+
+.aboutus-hero3 h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    text-align: center;
+    /* margin: 30px 0px; */
+    /* width: 300px; */
+    /* display: flex; */
+    /* justify-content: center; */
+    border: 2px solid whitesmoke;
+}
+
+.aboutus-hero3 p {
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    text-align: justify;
+    margin: 40px 400px;
+}
+.aboutus-hero3::before {
+    content: "";
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 1; /* Ensure the overlay is above the background but below the text */
+}
+
+
 
 .reveal {
     position: relative;
@@ -285,6 +250,137 @@ html {
     opacity: 1;
 }
 
+/* this section is for the belief content */
+
+.belief-wrapper {
+    height: 80vh;
+    /* background-color: #ffa07a; */
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    /* margin: 40px; */
+}
+
+.belief-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.belief-head h2 {
+    margin-top: 50px;
+    border: 3px solid black;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.belief-head p {
+    margin: 30px 200px;
+    font-size: small;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-align: justify;
+
+}
+
+.belief-item-wrapper::-webkit-scrollbar {
+   height: 30px;
+   width: 10px;
+}
+
+.belief-item-wrapper::-webkit-scrollbar-track{
+    background: #6b0c0c;
+    /* width: 10px; */
+    margin: 0px 900px;
+    border-radius: 30px;
+}
+
+.belief-item-wrapper::-webkit-scrollbar-thumb {
+   background: rgb(146, 146, 146);
+   border-radius: 40px;
+}
+
+.belief-item-wrapper {
+    /* margin-bottom: 40px; */
+    /* max-height: 500px; */
+    display: flex;
+    overflow-x: auto;
+}
+
+.belief-items {
+    margin: 30px 20px;
+    /* border: 1px solid black; */
+    min-height: 400px;
+    min-width: 400px;
+    /* cursor:grab; */
+    background-color: rgb(236, 227, 215);
+}
+
+.belief-items .header-belief {
+    margin: 30px 20px;
+    /* font-weight: normal; */
+    text-transform: uppercase;
+    /* text-align:justify; */
+    font-size: 30px;
+}
+
+.belief-items p {
+    font-size: small;
+    letter-spacing: 1px;
+    margin: 20px 20px;
+    text-align: justify;
+}
+
+/* belief ends */
+
+
+/* last section for the aboutus  */
+
+.links-aboutus {
+    height: 20vh;
+    background: #ececec;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.links-aboutus h2 {
+    /* display: flex; */
+    text-align: center;
+    /* margin: 0px 700px; */
+    padding: 10px 20px;
+ /* width: 350px; */
+    border: 2px solid black;
+    /* font-size: normal; */
+    /* font-weight: normal; */
+    text-transform: uppercase;
+}
+.wrapper-links-aboutus {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.links-about-div {
+    margin: 40px 10px;
+    text-decoration: none;
+    border: 2px solid black;
+    /* width: 100px; */
+    text-transform: uppercase;
+    padding: 10px 30px;
+    /* border-radius: 8px; */
+    font-size: 20px;
+    color:black;
+}
+
+.links-about-div:hover {
+    background-color: black;
+    color: whitesmoke;
+
+}
 
 /* footer styles starts  */
 
@@ -500,7 +596,7 @@ html {
 }
 
 .heading-kids h2 {
-    font-weight: 800;
+    /* font-weight: 800; */
     text-transform:uppercase;
 }
 
@@ -522,8 +618,8 @@ html {
 }
 
 .second-image img {
-    height: 500px;
-    width: auto;
+    height: 350px;
+    /* width: auto; */
     object-fit: cover;
     margin-right: 100px;
 }
@@ -618,3 +714,71 @@ html {
     text-transform: uppercase;
     align-self: center;
 }
+
+/* styles for the kids over */
+
+/* this section is for the dedicated youth ministry page */
+
+.staff-youth-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0px;
+}
+
+.youth-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 150px;
+}
+
+.youth-text-wrapper h2 {
+    text-transform: uppercase;
+    width: 400px;
+    border: 2px solid black;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.youth-text-wrapper h3 {
+    text-transform: uppercase;
+    width: 200px;
+    border: 2px solid black;
+    padding: 10px 5px;
+    text-align: center;
+}
+
+#youth-contact {
+    text-decoration: none;
+    border: 2px solid black;
+    width: 100px;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    /* border-radius: 8px; */
+    font-size: normal;
+    color:black
+}
+
+#youth-contact:hover {
+    background-color: black;
+    color: whitesmoke;
+
+}
+
+.youth-text-wrapper p {
+    letter-spacing: 2px;
+    margin: 40px 0px;
+    text-align: justify;
+}
+
+.youth-img-wrapper img {
+    height: 500px;
+}
+
+/* styles for the youths over. */
+
+/* styles for the mom starts  */
+
+
+
+/* styles for the moms end  */
+
