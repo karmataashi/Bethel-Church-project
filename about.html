@@ -21,25 +21,58 @@
 
         <!-- this scetion is for the nav bar -->
 
-        <div class="nav-container">
+        <div id="nav-container">
+
             <div class="nav-logo">
-                <a href="#hero-container">
-                    <h2><span>@</span>BETHEL</h2>
+                <a class="nav-logo" href="#hero-container">
+                   <img src="./assests/bethel_logo.png" alt="bethel_logo">
                 </a>
             </div>
-            <div class="background"></div>
     
             <div class="nav-links-container">
                 <ul class="nav-links">
-                    <li class="nav-link-item"><a href="#events-container">EVENTS</a></li>
-                    <li class="nav-link-item"><a href="#ministry">MINISTRIES</a></li>
-                    <li class="nav-link-item"><a href="#church-timings">TIMINGS</a></li>
-                    <li class="nav-link-item"><a href="#about">ABOUT</a></li>
-                    <li class="nav-link-item"><a href="resources.html">RESOURCES</a></li>
+                    <li class="nav-link-item"><a href="#church-timings">TIMINGS</a></li> 
+                    <li class="nav-link-item"><a href="#events-container">EVENTS
+    
+                        <ul class="dropdown">
+                            <li><a href="#">Upcoming events</a></li>
+                        </ul>
+                    </a></li>
+                    <li class="nav-link-item"><a href="#ministry">MINISTRIES
+    
+                        <ul class="dropdown">
+                            <li><a href="kids.html">Kid's Ministry</a></li>
+                            <li><a href="youth.html">Youth Ministry </a></li>
+                            <li><a href="moms.html">Women's Ministry </a></li>
+                        </ul>
+                    </a></li>
+                    
+                    <li class="nav-link-item"><a href="#about">ABOUT
+    
+                        <ul class="dropdown">
+                            <li><a href="about.html">Who we are</a></li>
+                            <li><a href="#">Leadership</a></li>
+                            <li><a href="#">Contact</a> </li>
+                            <li><a href="#">Location</a></li>
+                        </ul>
+                    </a></li>
+                    <li class="nav-link-item"><a href="resources.html">RESOURCES
+    
+                        <ul class="dropdown">
+                            <li><a href="#">Media/ Images</a></li>
+                            <li><a href="#">Watch Sermons </a></li>
+                        </ul>
+                    </a></li>
+                    <li class="nav-link-item">
+                        <a href="#">
+                            <i id="admin" class="ri-admin-fill"></i> 
+                        </a>
+                    </li>
                 </ul>
             </div>
             <img onclick="showMenu()" src="/assests/icons8-menu-50.png" class="menu-btn">
         </div>
+    
         
         <!-- third section -->
         <div class="aboutus-hero3">

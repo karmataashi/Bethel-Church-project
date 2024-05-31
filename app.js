@@ -2,7 +2,7 @@
 window.addEventListener('scroll', function () {
     let scrolled = window.scrollY;
     let parallax = document.querySelector('#hero-container');
-    parallax.style.backgroundPositionY = -(scrolled * 1.6) + 'px';
+    parallax.style.backgroundPositionY = -(scrolled * 1.2) + 'px';
 })
 //parallax effect ends here
 
@@ -64,3 +64,17 @@ verseText.classList.add('verse-text');
 verseText.innerText = finalVerse;
 
 verse.appendChild(verseText);
+
+// this is  for the nav bar drop down
+const Event=document.querySelector("#event");
+const Ministries=document.querySelector("#Ministries");
+const ABout=document.querySelector("#about");
+const REsource=document.querySelector("#resources");
+const drop1=document.querySelector(".dropdown1");
+const drop2=document.querySelector(".dropdown2");
+const drop3=document.querySelector(".dropdown3");
+const drop4=document.querySelector(".dropdown4");
+Event.addEventListener("mouseover",()=>{
+
+    drop1.style.display="block";
+})

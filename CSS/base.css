@@ -3,92 +3,147 @@ SO the mostly styles styles for the dedicated pages are present here */
 
 /* this section is for about us  */
 
-*,
-body {
+*{
     margin: 0;
     padding: 0;
-    font-family: Poppins, sans-serif;
     scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    background-color: #222222;
 }
 
 html {
     box-sizing: border-box;
 }
 
-#main-aboutus-container {
+/* #main-aboutus-container {
     height: auto;
     width: 100%;
 
-}
+} */
 
 
 /* nav bar styles */
 
 
-.nav-container {
+#nav-container {
     display: flex;
     justify-content: space-between;
-    background-color: #000000;
+    background-color: white;
     align-items: center;
     position: fixed;
     width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 999;
+    /* padding: 0px 50px; */
+    /* top: 0;
+    left: 0; */
+    z-index: 99;
+    
+    /* height: 90px; */
 }
 
-.nav-logo {
+
+
+#admin {
+    font-size: 30px;
+}
+
+/* .nav-logo {
     display: flex;
     justify-content: center;
     align-items: center;
+} */
+
+.nav-logo {
+    /* color: rgb(192, 18, 53); */
+    margin-left: 120px;
+    /* margin-top: 40px; */
 }
 
-.nav-logo h2 span {
-    color: rgb(192, 18, 53);
-    margin-left: 60px;
+.nav-logo img {
+    /* color: #000000; */
+    /* text-decoration: none; */
+    /* letter-spacing: 2px; */
+    height: 80px;
 }
-
-.nav-logo a {
-    color: #fff;
-    text-decoration: none;
-    letter-spacing: 4px;
-}
-.nav-links-container {
+/* .nav-links-container {
     padding: 8px 0;
-}
+} */
 
 .nav-links {
     list-style: none;
-    margin-right: 40px;
+    margin-right: 150px;
 }
 
 .nav-links>.nav-link-item {
     display: inline-block;
-    margin: 0 24px;
-    position: relative;
+    margin: 0 30px;
+    /* position: relative; */
 }
 
 .nav-links>.nav-link-item>a {
     text-decoration: none;
-    display: flex;
-    padding: 10px 0;
-    color: #fff;
-    font-weight: 400;
-    letter-spacing: 2px;
+    font-size: 18px;
+    /* display: flex; */
+    /* padding: 10px 0; */
+    color: #000000;
+    font-weight: 600;
+    letter-spacing: 1px;
     transition: 0.3s ease;
-    align-items: center;
+    /* text-transform: capitalize; */
+    /* align-items: center; */
     transition: transform 0.2s ease-in-out;
 }
 
 .nav-links>.nav-link-item:hover>a {
     color: #DD5746;
-    transform: scale(1.1);
+    transform: scale(1.5);
 }
 
+/* dropdown */
+
+.dropdown a {
+    text-decoration: none;
+}
+
+.dropdown {
+    list-style: none;
+    position: absolute; 
+    background-color: #ffffff;
+    box-shadow: 0 10px 45px rgb(85, 85, 85);
+    /* border-radius: 16px; */
+    /* margin-top: -390px; */
+    width: 150px;
+    opacity: 0;
+    z-index: -999;
+    text-align: center;
+    transition: all ease 1s;
+}
+
+.dropdown a {
+    color: #2c2c2c;
+    font-size: 15px;
+    line-height: 50px;
+    font-weight: 600;
+}
+
+.nav-links-container ul li:hover .dropdown {
+    padding: 30px 0px;
+    z-index: 999;
+    opacity: 1;
+    margin-top: 25px;
+    /* color: #DD5746; */
+    /* display: block; */
+}
+/* dropdown */
 .menu-btn {
     height: 30px;
     width: 30px;
     display: none;
+    background-color: #000000;
+    
 }
 
 .sidebar {
@@ -98,7 +153,7 @@ html {
     height: 100%;
     width: 240px;
     z-index: 999;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     display: none;
     flex-direction: column;
@@ -113,7 +168,7 @@ html {
 
 .sidebar li a {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 22px;
 }
 
@@ -128,7 +183,7 @@ html {
     padding: 8px 16px;
     border-radius: 4px;
     background-color: rgba(192, 18, 53, 10);
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -140,7 +195,7 @@ html {
 /*  hero-2 styles starts here*/
 
 #aboutus-hero2 {
-    background-color: rgb(243, 243, 243);
+    background-color: whitesmoke;
     display: flex;
     padding: 120px 250px;
     align-items: center;
@@ -153,7 +208,7 @@ html {
 .hero2-img {
     height: 400px;
     width: 500px;
-    box-shadow: 1px 1px 1px rgb(54, 54, 54);
+    box-shadow: 1px 1px 1px rgb(180, 180, 180);
     /* width: auto; */
     /* background-repeat: no-repeat; */
 
@@ -203,6 +258,7 @@ html {
     position: relative;
     z-index: 3;
     /* top: 15rem; */
+    margin-top: 20px;
 }
 
 .aboutus-hero3 h2 {
@@ -232,7 +288,7 @@ html {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    background: rgba(20, 20, 20, 0.5); /* Semi-transparent black overlay */
     z-index: 1; /* Ensure the overlay is above the background but below the text */
 }
 
@@ -254,10 +310,11 @@ html {
 
 .belief-wrapper {
     height: 80vh;
-    /* background-color: #ffa07a; */
+    /* background-color: #050505; */
     overflow: visible;
     display: flex;
     flex-direction: column;
+    color: whitesmoke;
     /* margin: 40px; */
 }
 
@@ -270,7 +327,7 @@ html {
 
 .belief-head h2 {
     margin-top: 50px;
-    border: 3px solid black;
+    border: 3px solid whitesmoke;
     padding: 10px 20px;
     text-transform: uppercase;
 }
@@ -290,14 +347,14 @@ html {
 }
 
 .belief-item-wrapper::-webkit-scrollbar-track{
-    background: #6b0c0c;
+    background: #ffffff;
     /* width: 10px; */
     margin: 0px 900px;
     border-radius: 30px;
 }
 
 .belief-item-wrapper::-webkit-scrollbar-thumb {
-   background: rgb(146, 146, 146);
+   background: rgb(119, 21, 21);
    border-radius: 40px;
 }
 
@@ -314,7 +371,7 @@ html {
     min-height: 400px;
     min-width: 400px;
     /* cursor:grab; */
-    background-color: rgb(236, 227, 215);
+    background-color: rgb(92, 32, 32);
 }
 
 .belief-items .header-belief {
@@ -339,7 +396,7 @@ html {
 
 .links-aboutus {
     height: 20vh;
-    background: #ececec;
+    background: whitesmoke;
     padding: 50px 0px;
     display: flex;
     flex-direction: column;
@@ -348,6 +405,7 @@ html {
 }
 
 .links-aboutus h2 {
+    color: black;
     /* display: flex; */
     text-align: center;
     /* margin: 0px 700px; */
@@ -377,7 +435,7 @@ html {
 }
 
 .links-about-div:hover {
-    background-color: black;
+    background-color: rgb(102, 15, 15);
     color: whitesmoke;
 
 }
