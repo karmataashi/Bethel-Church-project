@@ -1,9 +1,9 @@
 //parallax effect starts here
-window.addEventListener('scroll', function () {
-    let scrolled = window.scrollY;
-    let parallax = document.querySelector('#hero-container');
-    parallax.style.backgroundPositionY = -(scrolled * 1.2) + 'px';
-})
+// window.addEventListener('scroll', function () {
+//     let scrolled = window.scrollY;
+//     let parallax = document.querySelector('#hero-container');
+//     parallax.style.backgroundPositionY = -(scrolled * 1.2) + 'px';
+// })
 //parallax effect ends here
 
 // sidebar ko lagi 
@@ -66,15 +66,42 @@ verseText.innerText = finalVerse;
 verse.appendChild(verseText);
 
 // this is  for the nav bar drop down
-const Event=document.querySelector("#event");
-const Ministries=document.querySelector("#Ministries");
-const ABout=document.querySelector("#about");
-const REsource=document.querySelector("#resources");
-const drop1=document.querySelector(".dropdown1");
-const drop2=document.querySelector(".dropdown2");
-const drop3=document.querySelector(".dropdown3");
-const drop4=document.querySelector(".dropdown4");
-Event.addEventListener("mouseover",()=>{
+ 
+ const Link1=document.querySelector(".Link1");
+ const Link2=document.querySelector(".Link2");
+ const Link3=document.querySelector(".Link3");
+ const Link4=document.querySelector(".Link4");
 
-    drop1.style.display="block";
+ //All dropdown <ul>
+ const drop1=document.querySelector(".drop1");
+ const drop2=document.querySelector(".drop2");
+ const drop3=document.querySelector(".drop3");
+ const drop4=document.querySelector(".drop4");
+
+Link1.addEventListener("mouseover",()=>{
+  drop1.style.display="block"
+ })
+Link1.addEventListener("mouseout",()=>{
+ drop1.style.display="none"
+})
+
+Link2.addEventListener("mouseover",()=>{
+  drop2.style.display="block"
+ })
+Link2.addEventListener("mouseout",()=>{
+ drop2.style.display="none"
+})
+
+Link3.addEventListener("mouseover",()=>{
+  drop3.style.display="block"
+ })
+Link3.addEventListener("mouseout",()=>{
+ drop3.style.display="none"
+})
+
+Link4.addEventListener("mouseover",()=>{
+  drop4.style.display="block"
+ })
+Link4.addEventListener("mouseout",()=>{
+ drop4.style.display="none"
 })

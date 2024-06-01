@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bethel Church</title>
     <link rel="stylesheet" href="./CSS/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+        integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <script defer src="app.js"></script>
     <!-- <script defer src="resources.js"></script> -->
@@ -19,19 +24,67 @@
 <body>
 
     <!-- Header container starts here -->
+    <nav>
+        <div class="nav-logo">
+            <!-- <img src="/assests/bethel_logo.png" alt="Bethellogo"> -->
+            <h2>be<span id="logo-talkeko">t</span>heL</h2>
+        </div>
 
-   
+        <div class="navContainer">
+
+            <div class="Link1">
+                    About
+                    <ul class="drop1">
+                        <li> <a href="#">Who we are</a> </li>
+                        <li> <a href="#">Leadership</a> </li>
+                        <li> <a href="#">Contact</a> </li>
+                    </ul>
+                
+            </div>
+
+            <div class="Link2">
+                    Ministries
+                    <ul class="drop2">
+                        <li> <a href="#">Kid's Ministry</a> </li>
+                        <li> <a href="#">Youth Ministry</a> </li>
+                        <li> <a href="#">Women's Ministry</a> </li>
+                    </ul>
+               
+            </div>
+
+            <div class="Link3">
+                    Resources
+                    <ul class="drop3">
+                        <li> <a href="#">Media/Images</a> </li>
+                        <li> <a href="#">Watch sermon</a> </li>
+                        <li> <a href="#">Location</a> </li>
+                    </ul>
+                </a>
+            </div>
+
+            <div class="Link4"><a href="#">
+                    Events
+                </a>
+            </div>
+
+            <div class="link5"><a href="#">
+                    <i class="ri-user-fill" id="admin"></i></a>
+            </div>
+        </div>
+        <img onclick="showMenu()" src="/assests/icons8-menu-50.png" class="menu-btn">
+    </nav>
+
     <!-- Header container starts here -->
 
     <!-- Hero container starts here -->
     <div id="hero-container">
-        <div class="overlay"></div>
         <div id="title-box">
-            <h1 id="animated-text">BE<span id="talkeko-text-main-hero-ko">T</span>HEL AG CHRUCH</h1>
+            <h1 id="animated-text">BE<span id="talkeko-text-main-hero-ko">T</span>HEL AG CHRUCH </h1>
         </div>
+        <div class="overlay"></div>
         <div id="welcome-text-container">
-            <p class="welcome-text">"REACH <span id="red-text">THE </span>UNREACHED"</p>
-           
+            <p class="welcome-text">"REACH THE UNREACHED"</p>
+
         </div>
         <hr>
 
