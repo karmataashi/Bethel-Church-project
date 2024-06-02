@@ -37,7 +37,7 @@ function reveal() {
 }
 
 const verses = [
-    '"Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit." - Matthew 28-19',
+    '"Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit."- Matthew 28-19',
     '"I can do all things through Christ who strengthens me." - Philippians 4:13',
     '"Trust in the Lord with all your heart and lean not on your own understanding." - Proverbs 3:5',
     '"For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life." - John 3:16',
