@@ -44,6 +44,7 @@ nav {
     /* font-size: 25px; */
     /* text-transform: capitalize; */
     overflow: clip;
+    overflow: hidden;
 }
 
 #logo-talkeko {
@@ -70,7 +71,7 @@ nav {
     font-size: 20px;
     font-weight: 600;
     font-variant: small-caps;
-    color: rgb(255, 255, 255);
+    /* color: rgb(255, 255, 255); */
 
 }
 
@@ -84,14 +85,16 @@ nav {
 .drop1 a,
 .drop2 a,
 .drop3 a {
+    /* color: black; */
     text-decoration: none;
-    color: rgb(255, 255, 255);
     font-size: 15px;
     font-weight: 600;
     text-transform: uppercase;
 }
 
-
+.Link1 a,
+.Link2 a,
+.Link3 a,
 .Link4 a {
     /* list-style: none; */
     text-decoration: none;
@@ -102,7 +105,7 @@ nav {
 .drop2,
 .drop3 {
     z-index: 99;
-    background-color: rgb(0, 0, 0);
+    background-color:dimgray;
     position: absolute;
     display: none;
     padding: 30px 40px;
@@ -359,13 +362,6 @@ nav {
     color: #BA1200;
 }
 
-/* 
-.events-content {
-
-    display: flex;
-    flex-direction: column;
-} */
-
 .events-content-container {
     display: flex;
     margin: 60px;
@@ -373,10 +369,6 @@ nav {
     align-items: center;
 }
 
-/* .event-heading p {
-    font-size: 16px;
-    font-weight: normal;
-} */
 
 .event-1 {
     background-image: url('/assests/Children.jpeg');
@@ -465,11 +457,6 @@ nav {
     /* border-radius: 4px; */
 }
 
-/* #events-container a {
-    box-shadow: 4px 5px 3px solid black;;
-text-shadow: 4px 5px 3px solid black;
-
-} */
 
 .events-pg-btn:hover {
     background-color: #3b0d11;
@@ -489,6 +476,7 @@ text-shadow: 4px 5px 3px solid black;
     justify-content: center;
     align-items: center;
     font-family: "Playfair Display", serif;
+    
 }
 
 
@@ -620,10 +608,6 @@ text-shadow: 4px 5px 3px solid black;
     margin: 30px;
 }
 
-
-
-
-
 /* ministry ends*/
 
 /* second container starts */
@@ -643,7 +627,7 @@ text-shadow: 4px 5px 3px solid black;
 
 /* church timings */
 
-.timings {
+#timings {
     background-color: rgba(0, 0, 0, 0.932);
     height: 60vh;
     width: 100%;
@@ -666,7 +650,7 @@ text-shadow: 4px 5px 3px solid black;
     letter-spacing: 3px;
 }
 
-.timings hr {
+#timings hr {
     height: 3px;
     border: none;
     width: 25%;
@@ -745,23 +729,59 @@ text-shadow: 4px 5px 3px solid black;
     /* padding: 20px; */
 }
 
-/* .circle {
-    height: 180px;
-    width: 420px;
-    background-color: #535353;
-    position: relative;
-    z-index: -2;
-    transform: translatex(-60%);
-    border-radius: 6px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-} */
-
 
 /*timings ends */
+
+/* about us section for the homepage */
+
+#aboutus {
+    padding: 90px;
+    /* height: 60vh; */
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid white; */
+    overflow: clip;
+    overflow: hidden;
+    background-color:  #1a1a1a;
+}
+
+.about-img img {
+    border-radius: 8px;
+    height: 700px;
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+}
+
+
+.right-hero2 {
+    width: 600px;
+}
+
+.hero2-para{
+    font-size: normal;
+    font-weight: normal;
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-align: justify;
+    padding: 40px 0px;
+}
+
+.right-hero2 a{
+    border: 1px solid white;
+    text-decoration: none;
+    padding: 10px 60px;
+    color: white;
+    transition: 1s;
+}
+
+#about-contact:hover  {
+    background-color:#BA1200;
+}
+
+/* about us ends */
 
 /* yo section chai footer ko lagi  */
 #footer {
