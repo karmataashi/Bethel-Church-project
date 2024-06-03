@@ -1,10 +1,10 @@
-//parallax effect starts here
-// window.addEventListener('scroll', function () {
-//     let scrolled = window.scrollY;
-//     let parallax = document.querySelector('#hero-container');
-//     parallax.style.backgroundPositionY = -(scrolled * 1.2) + 'px';
-// })
-//parallax effect ends here
+// parallax effect starts here
+window.addEventListener('scroll', function () {
+    let scrolled = window.scrollY;
+    let parallax = document.querySelector('#hero-container');
+    parallax.style.backgroundPositionY = -(scrolled * 1.5) + 'px';
+})
+// parallax effect ends here
 
 // sidebar ko lagi 
 function showMenu() {

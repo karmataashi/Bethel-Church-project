@@ -14,9 +14,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roseritta&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+
     <script defer src="app.js"></script>
     <!-- <script defer src="resources.js"></script> -->
 </head>
@@ -107,13 +111,13 @@
 
     <div class="timings">
         <div class="head-timings">
-        <h3>Welcome To Bethel ag</h3>
-        <hr>
+            <h3>Welcome To Bethel ag</h3>
+            <hr>
 
-        <!-- <p>Sunday services, midweek gatherings, fostering community, spiritual growth.
+            <!-- <p>Sunday services, midweek gatherings, fostering community, spiritual growth.
         </p> -->
-    </div>
-        
+        </div>
+
         <div id="church-timings">
             <!-- <div class="verse-content"> -->
             <!-- <div class="circle">
@@ -126,7 +130,7 @@
                 </div>
                 <div class="timing">
                     <h4 class="service">Sunday School:</h4>
-                    <h4 class="service-timing">"Timing | 12:00am -  1:00pm"</h4><br>
+                    <h4 class="service-timing">"Timing | 12:00am - 1:00pm"</h4><br>
                 </div>
                 <div class="timing">
                     <h4 class="service">Youth Service:</h4>
@@ -145,13 +149,14 @@
     <div id="events-container">
         <div class="event-content">
             <div class="event-heading">
-                <h3 class="reveal">Featured Events</h3>
-                <p class="reveal">Join us for our upcoming events at Bethel AG Church!<br>We look forward to seeing you
-                    there as we come together in faith and fellowship! </p>
+                <h3 class="reveal"><span>F</span>eatured <span>E</span>vents</h3>
+                <hr>
+                <!-- <p class="reveal">Join us for our upcoming events at Bethel AG Church!<br>We look forward to seeing you
+                    there as we come together in faith and fellowship! </p> -->
             </div>
 
             <div class="events-content-container">
-
+                <!-- <div class="overlay-events"></div> -->
                 <div class="card event-1 reveal">
                     <div class="overlay">
                         <h1>Child Dedication</h1>
@@ -179,42 +184,42 @@
 
     <!-- mininstries section -->
     <div id="ministry">
+        <div class="kids-container">
+            <a href="#">
+                <div class="kids-wrapper">
 
-        <h3 class="ministry-heading reveal">Ministries</h3>
-        <p class="ministry-description reveal">At Bethel AG Church, our ministry focuses on fostering faith, offering
-            support, and sharing God's love through worship and community outreach.</p>
-        <div class="ministry-content">
-            <div class="kid-ministry reveal">
-                <a href="#" title="KIDS MINISTRIES">
-                    <div class="child-bg-img ministry-img"></div>
-                </a>
-                <div class="kid-ministry-content">
-                    <h3 class="ministry-head">Kid's Ministry</h3>
-                    <p>Fun, faith-building, interactive learning, and love for young hearts.</p>
-                    <!-- <a class="ministry-link" href="#">See More...</a> -->
+                    <h2 class="kids-text">
+                        Kids
+                    </h2>
                 </div>
-            </div>
-            <div class="adult-ministry reveal">
-                <a href="#">
-                    <div class="adult-bg-img ministry-img"></div>
-                </a>
-                <div class="adult-ministry-content">
-                    <h3>Adult's Ministry</h3>
-                    <p>Fostering spiritual growth, community, and meaningful connections.</p>
-                    <!-- <a class="ministry-link" href="#">See More...</a> -->
-                </div>
-            </div>
-            <div class="mom-ministry reveal">
-                <a href="#">
-                    <div class="mom-bg-img ministry-img"></div>
-                </a>
-                <div class="mom-ministry-content">
-                    <h3>Mom's Ministry</h3>
-                    <p>Support, encouragement, fellowship, and spiritual growth for mothers.</p>
-                    <!-- <a class="ministry-link" href="#">See More...</a> -->
-                </div>
-            </div>
+            </a>
         </div>
+
+        <div class="women-youth-wrapper">
+            <div class="youth-container">
+                <a href="#">
+                    <div class="youth-wrapper">
+    
+                        <h2 class="youth-text">
+                            Youth's
+                        </h2>
+                    </div>
+                </a>
+            </div>
+            <div class="women-container">
+                <a href="#">
+                    <div class="women-wrapper">
+    
+                        <h2 class="women-text">
+                            Women's
+                        </h2>
+                    </div>
+                </a>
+            </div>
+            
+
+        </div>
+
     </div>
 
     <!-- ministries ends -->
@@ -260,106 +265,74 @@
     <!-- CONTACT PAGE -->
 
     <!-- this is where the footer starts  -->
-    <footer>
-        <div class="footer-links">
-            <a href="#"><svg class="footer-link-svg" xmlns="http://www.w3.org/2000/svg" width="2500" height="2500"
-                    viewBox="126.444 2.281 589 589" id="twitter">
-                    <circle cx="420.944" cy="296.781" r="294.5" fill="#2daae1"></circle>
-                    <path fill="#fff"
-                        d="M609.773 179.634c-13.891 6.164-28.811 10.331-44.498 12.204 16.01-9.587 28.275-24.779 34.066-42.86a154.78 154.78 0 0 1-49.209 18.801c-14.125-15.056-34.267-24.456-56.551-24.456-42.773 0-77.462 34.675-77.462 77.473 0 6.064.683 11.98 1.996 17.66-64.389-3.236-121.474-34.079-159.684-80.945-6.672 11.446-10.491 24.754-10.491 38.953 0 26.875 13.679 50.587 34.464 64.477a77.122 77.122 0 0 1-35.097-9.686v.979c0 37.54 26.701 68.842 62.145 75.961-6.511 1.784-13.344 2.716-20.413 2.716-4.998 0-9.847-.473-14.584-1.364 9.859 30.769 38.471 53.166 72.363 53.799-26.515 20.785-59.925 33.175-96.212 33.175-6.25 0-12.427-.373-18.491-1.104 34.291 21.988 75.006 34.824 118.759 34.824 142.496 0 220.428-118.052 220.428-220.428 0-3.361-.074-6.697-.236-10.021a157.855 157.855 0 0 0 38.707-40.158z">
-                    </path>
-                </svg></a>
-            <a href="#"><svg class="footer-link-svg" xmlns="http://www.w3.org/2000/svg" width="2500" height="1756"
-                    viewBox="5.368 13.434 53.9 37.855" id="youtube">
-                    <path fill="#FFF"
-                        d="M41.272 31.81c-4.942-2.641-9.674-5.069-14.511-7.604v15.165c5.09-2.767 10.455-5.301 14.532-7.561h-.021z">
-                    </path>
-                    <path fill="#E8E0E0"
-                        d="M41.272 31.81c-4.942-2.641-14.511-7.604-14.511-7.604l12.758 8.575c.001 0-2.324 1.289 1.753-.971z">
-                    </path>
-                    <path fill="#CD201F"
-                        d="M27.691 51.242c-10.265-.189-13.771-.359-15.926-.803-1.458-.295-2.725-.95-3.654-1.9-.718-.719-1.289-1.816-1.732-3.338-.38-1.268-.528-2.323-.739-4.9-.323-5.816-.4-10.571 0-15.884.33-2.934.49-6.417 2.682-8.449 1.035-.951 2.239-1.563 3.591-1.816 2.112-.401 11.11-.718 20.425-.718 9.294 0 18.312.317 20.426.718 1.689.317 3.273 1.267 4.203 2.492 2 3.146 2.035 7.058 2.238 10.118.084 1.458.084 9.737 0 11.195-.316 4.836-.57 6.547-1.288 8.321-.444 1.12-.823 1.711-1.479 2.366a7.085 7.085 0 0 1-3.76 1.922c-8.883.668-16.426.813-24.987.676zM41.294 31.81c-4.942-2.641-9.674-5.09-14.511-7.625v15.166c5.09-2.767 10.456-5.302 14.532-7.562l-.021.021z">
-                    </path>
-                </svg></a>
-            <a href="#"><svg class="footer-link-svg" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 128 128" id="instagram">
-                    <defs>
-                        <clipPath id="b">
-                            <circle cx="64" cy="64" r="64" fill="none"></circle>
-                        </clipPath>
-                        <clipPath id="c">
-                            <path fill="none"
-                                d="M104-163H24a24.07 24.07 0 0 0-24 24v80a24.07 24.07 0 0 0 24 24h80a24.07 24.07 0 0 0 24-24v-80a24.07 24.07 0 0 0-24-24Zm16 104a16 16 0 0 1-16 16H24A16 16 0 0 1 8-59v-80a16 16 0 0 1 16-16h80a16 16 0 0 1 16 16Z">
-                            </path>
-                        </clipPath>
-                        <clipPath id="e">
-                            <circle cx="82" cy="209" r="5" fill="none"></circle>
-                        </clipPath>
-                        <clipPath id="g">
-                            <path fill="none"
-                                d="M64-115a16 16 0 0 0-16 16 16 16 0 0 0 16 16 16 16 0 0 0 16-16 16 16 0 0 0-16-16Zm0 24a8 8 0 0 1-8-8 8 8 0 0 1 8-8 8 8 0 0 1 8 8 8 8 0 0 1-8 8Z">
-                            </path>
-                        </clipPath>
-                        <clipPath id="h">
-                            <path fill="none"
-                                d="M84-63H44a16 16 0 0 1-16-16v-40a16 16 0 0 1 16-16h40a16 16 0 0 1 16 16v40a16 16 0 0 1-16 16Zm-40-64a8 8 0 0 0-8 8v40a8 8 0 0 0 8 8h40a8 8 0 0 0 8-8v-40a8 8 0 0 0-8-8Z">
-                            </path>
-                        </clipPath>
-                        <clipPath id="i">
-                            <circle cx="82" cy="-117" r="5" fill="none"></circle>
-                        </clipPath>
-                        <radialGradient id="a" cx="27.5" cy="121.5" r="137.5" gradientUnits="userSpaceOnUse">
-                            <stop offset="0" stop-color="#ffd676"></stop>
-                            <stop offset=".25" stop-color="#f2a454"></stop>
-                            <stop offset=".38" stop-color="#f05c3c"></stop>
-                            <stop offset=".7" stop-color="#c22f86"></stop>
-                            <stop offset=".96" stop-color="#6666ad"></stop>
-                            <stop offset=".99" stop-color="#5c6cb2"></stop>
-                        </radialGradient>
-                        <radialGradient id="d" cx="27.5" cy="-41.5" r="148.5" xlink:href="#a"></radialGradient>
-                        <radialGradient id="f" cx="13.87" cy="303.38" r="185.63" xlink:href="#a"></radialGradient>
-                        <radialGradient id="j" cx="13.87" cy="-22.62" r="185.63" xlink:href="#a"></radialGradient>
-                    </defs>
-                    <g clip-path="url(#b)">
-                        <circle cx="27.5" cy="121.5" r="137.5" fill="url(#a)"></circle>
-                    </g>
-                    <g clip-path="url(#c)">
-                        <circle cx="27.5" cy="-41.5" r="148.5" fill="url(#d)"></circle>
-                    </g>
-                    <g clip-path="url(#e)">
-                        <circle cx="13.87" cy="303.38" r="185.63" fill="url(#f)"></circle>
-                    </g>
-                    <g clip-path="url(#g)">
-                        <circle cx="27.5" cy="-41.5" r="148.5" fill="url(#d)"></circle>
-                    </g>
-                    <g clip-path="url(#h)">
-                        <circle cx="27.5" cy="-41.5" r="148.5" fill="url(#d)"></circle>
-                    </g>
-                    <g clip-path="url(#i)">
-                        <circle cx="13.87" cy="-22.62" r="185.63" fill="url(#j)"></circle>
-                    </g>
-                    <circle cx="82" cy="46" r="5" fill="#fff"></circle>
-                    <path fill="#fff" d="M64 48a16 16 0 1 0 16 16 16 16 0 0 0-16-16Zm0 24a8 8 0 1 1 8-8 8 8 0 0 1-8 8Z">
-                    </path>
-                    <rect width="64" height="64" x="32" y="32" fill="none" stroke="#fff" stroke-miterlimit="10"
-                        stroke-width="8" rx="12" ry="12"></rect>
-                </svg></a>
-            <a href="#"><svg class="footer-link-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
-                    id="facebook">
-                    <path fill="#1976D2"
-                        d="M14 0H2C.897 0 0 .897 0 2v12c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V2c0-1.103-.897-2-2-2z">
-                    </path>
-                    <path fill="#FAFAFA" fill-rule="evenodd"
-                        d="M13.5 8H11V6c0-.552.448-.5 1-.5h1V3h-2a3 3 0 0 0-3 3v2H6v2.5h2V16h3v-5.5h1.5l1-2.5z"
-                        clip-rule="evenodd"></path>
-                </svg></a>
+    <div id="footer">
+
+        <div class="footer-ko-container">
+
+            <div class="footer-ko-top">
+
+                <div class="footer-bhitra">
+                    <div class="Location-timings">
+                        <h2>Location</h2><br>
+                        <p>
+                            Bethel A.G Church,<br>
+                            House No: 11,<br>
+                            SEUJI Path, WIRELESS,<br>
+                            Landmark: Momo Hut/ Indian Oil<br> Petrol-pump(BYLANE),<br>
+                            Gwahati, Assam, India.<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-bhitra">
+
+                    <div class="footer-ko-quicklinks">
+
+                        <h2>Quick Links</h2>
+                        <div class="footer-ma-bhako-links">
+
+                            <ul class="footerko-links">
+                                <li class="footer-ko-li"><a href="#">Upcoming Events</a></li>
+                                <li class="footer-ko-li"><a href="#">Leaderships</a></li>
+                                <li class="footer-ko-li"><a href="#">Today's Verse</a></li>
+                                <li id="lastlink"><a href="#">Watch Service</a></li>
+                            </ul>
+                        </div>
+
+
+                        <div class="footer-contact">
+                            <h2>Contact Details</h2>
+
+                            <span class="icons-ko-tala"> 123-456-7890</span>
+
+                            <span class="icons-ko-tala"> info@example.com</span>
+
+                            <span class="icons-ko-tala">Church Service timing: Every Sunday 11am</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-ko-bottom">
+                <p class="footer-ko-bottom-text">Copyright &copy; 2024 Bethel AG Church. All rights reserved.<br>
+                    Unauthorized duplication or publication of any materials from this site is expressly prohibited.</p>
+
+                <ul class="footer-social-links">
+                    <li><a href="#" target="_blank"><img src="https://img.icons8.com/?size=50&id=32292&format=png"
+                                alt="Instagram"></a>
+                    </li>
+                    <li><a href="#" target="_blank"><img src="https://img.icons8.com/?size=50&id=118468&format=png"
+                                alt="Facebook"></a>
+                    </li>
+                    <li><a href="#" target="_blank"><img src="https://img.icons8.com/?size=50&id=16712&format=png"
+                                alt="WhatsApp"></a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="copyright">
-            <p>© 2024 Bethel AG Church. All rights reserved. Unauthorized duplication or publication of any materials
-                from this site is expressly prohibited.</p>
-        </div>
-        <div class="blank"></div>
-    </footer>
+
+    </div>
+    <!-- footer ends -->
 
 </body>
 
