@@ -10,7 +10,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <script defer src="app.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+        integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -20,58 +22,56 @@
 
 
         <!-- this scetion is for the nav bar -->
-
-        <div id="nav-container">
-
-            <div class="nav-logo">
-                <a class="nav-logo" href="#hero-container">
-                   <img src="./assests/bethel_logo.png" alt="bethel_logo">
+        <nav>
+            <div class="nav-logo"><a href="home.html">
+                <img src="/assests/bethel_chuurch_logo.png" alt="Bethellogo">
+                <!-- <h2>be<span id="logo-talkeko">t</span>heL</h2> -->
+            </a>
+            </div>
+    
+            <div class="navContainer">
+    
+                
+                <div class="Link4"><a href="#events-container">
+                    Events
+                </a>
+            </div>
+            <div class="Link2"><a href="#ministry">
+                Ministries
+                <ul class="drop2">
+                    <li> <a href="kids.html">Kid's Ministry</a> </li>
+                    <li> <a href="youth.html">Youth Ministry</a> </li>
+                    <li> <a href="moms.html">Women's Ministry</a> </li>
+                </ul>
+            </a>
+        </div>
+        
+        <div class="Link1"><a href="#aboutus">
+                About
+                <ul class="drop1">
+                    <li> <a href="#">Who we are</a> </li>
+                    <li> <a href="#">Leadership</a> </li>
+                    <li> <a href="#">Contact</a> </li>
+                </ul>
+            </a>
+        </div>
+                
+            <div class="Link3"><a href="#">
+                    Resources
+                    <ul class="drop3">
+                        <li> <a href="#">Media/Images</a> </li>
+                        <li> <a href="#">Watch sermon</a> </li>
+                        <li> <a href="#">Location</a> </li>
+                    </ul>
                 </a>
             </div>
     
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li class="nav-link-item"><a href="#church-timings">TIMINGS</a></li> 
-                    <li class="nav-link-item"><a href="#events-container">EVENTS
-    
-                        <ul class="dropdown">
-                            <li><a href="#">Upcoming events</a></li>
-                        </ul>
-                    </a></li>
-                    <li class="nav-link-item"><a href="#ministry">MINISTRIES
-    
-                        <ul class="dropdown">
-                            <li><a href="kids.html">Kid's Ministry</a></li>
-                            <li><a href="youth.html">Youth Ministry </a></li>
-                            <li><a href="moms.html">Women's Ministry </a></li>
-                        </ul>
-                    </a></li>
-                    
-                    <li class="nav-link-item"><a href="#about">ABOUT
-    
-                        <ul class="dropdown">
-                            <li><a href="about.html">Who we are</a></li>
-                            <li><a href="#">Leadership</a></li>
-                            <li><a href="#">Contact</a> </li>
-                            <li><a href="#">Location</a></li>
-                        </ul>
-                    </a></li>
-                    <li class="nav-link-item"><a href="resources.html">RESOURCES
-    
-                        <ul class="dropdown">
-                            <li><a href="#">Media/ Images</a></li>
-                            <li><a href="#">Watch Sermons </a></li>
-                        </ul>
-                    </a></li>
-                    <li class="nav-link-item">
-                        <a href="#">
-                            <i id="admin" class="ri-admin-fill"></i> 
-                        </a>
-                    </li>
-                </ul>
+                <div class="link5"><a href="#">
+                        <i class="ri-user-fill" id="admin"></i></a>
+                </div>
             </div>
             <img onclick="showMenu()" src="/assests/icons8-menu-50.png" class="menu-btn">
-        </div>
+        </nav>
     
         
         <!-- third section -->
@@ -105,13 +105,13 @@
 
 
 
-        <div class="belief-wrapper reveal">
+        <div class="belief-wrapper">
 
-            <div class="belief-head">
+            <!-- <div class="belief-head">
 
                 <h2>our belief</h2>
                 <p>At Bethel AG Church, our beliefs are the foundation of everything we do. They guide our worship, our teachings, and our daily lives. We believe in the transformative power of God's Word and the importance of living out our faith in community. Our beliefs are rooted in the Bible, inspired by the Holy Spirit, and centered on the love and grace of Jesus Christ. We invite you to explore the core principles that shape our faith and our mission.</p>
-            </div>
+            </div> -->
 
             <div class="belief-item-wrapper">
 
@@ -122,39 +122,38 @@
                 </div>
                 <div class="belief-items">
 
-                    <h3 class="header-belief">the bible</h3>
-                    <p>Our Belief: We believe the Bible is the inspired, infallible Word of God and the final authority for faith and life.</p>
+                    <h3 class="header-belief">The Trinity</h3>
+                    <p>Our Belief: We believe in one God, eternally existent in three persons: Father, Son, and Holy Spirit.</p>
                 </div>
                 <div class="belief-items">
 
-                    <h3 class="header-belief">the bible</h3>
-                    <p>Our Belief: We believe the Bible is the inspired, infallible Word of God and the final authority for faith and life.</p>
+                    <h3 class="header-belief">Jesus Christ</h3>
+                    <p>Our Belief: We believe that Jesus Christ is the Son of God, fully God and fully man. He was born of a virgin, lived a sinless life, died for our sins, was buried, and rose again on the third day. He ascended into heaven and will return in glory.</p>
                 </div>
                 <div class="belief-items">
 
-                    <h3 class="header-belief">the bible</h3>
-                    <p>Our Belief: We believe the Bible is the inspired, infallible Word of God and the final authority for faith and life.</p>
+                    <h3 class="header-belief">Salvation</h3>
+                    <p>Our Belief: We believe that salvation is a free gift from God, available to all through faith in Jesus Christ. It is by grace alone, through faith alone, in Christ alone.</p>
                 </div>
 
                 <div class="belief-items">
 
-                    <h3 class="header-belief">the bible</h3>
-                    <p>Our Belief: We believe the Bible is the inspired, infallible Word of God and the final authority for faith and life.</p>
+                    <h3 class="header-belief">The Holy Spirit</h3>
+                    <p>Our Belief: We believe in the present ministry of the Holy Spirit, who indwells all believers and equips them for service and spiritual growth.</p>
                 </div>
                 
                 <div class="belief-items">
 
-                    <h3 class="header-belief">the bible</h3>
-                    <p>Our Belief: We believe the Bible is the inspired, infallible Word of God and the final authority for faith and life.</p>
+                    <h3 class="header-belief">The Church</h3>
+                      <p>We believe that the Church is the Body of Christ, consisting of all believers. The Church is called to worship God, build up the saints, and evangelize the world.</p>
                 </div>
                 
                 <div class="belief-items">
 
-                    <h3 class="header-belief">the bible</h3>
-                    <p>Our Belief: We believe the Bible is the inspired, infallible Word of God and the final authority for faith and life.</p>
+                    <h3 class="header-belief">Baptism and Communion</h3>
+                    <p>We believe in the ordinances of baptism by immersion and the Lord’s Supper (communion) as outward signs of inward grace, commanded by Jesus to be observed by the church.
+                    </p>
                 </div>
-                
-                
             </div>
         </div>
 <!-- second section ends  -->
@@ -242,7 +241,50 @@
 
         </div>
         <!-- footer ends -->
+
+        <script defer>
+            const Link1=document.querySelector(".Link1");
+    const Link2=document.querySelector(".Link2");
+    const Link3=document.querySelector(".Link3");
+    const Link4=document.querySelector(".Link4");
+    
+    //All dropdown <ul>
+    const drop1=document.querySelector(".drop1");
+    const drop2=document.querySelector(".drop2");
+    const drop3=document.querySelector(".drop3");
+    const drop4=document.querySelector(".drop4");
+    
+    Link1.addEventListener("mouseover",()=>{
+     drop1.style.display="block"
+    })
+    Link1.addEventListener("mouseout",()=>{
+    drop1.style.display="none"
+    })
+    
+    Link2.addEventListener("mouseover",()=>{
+     drop2.style.display="block"
+    })
+    Link2.addEventListener("mouseout",()=>{
+    drop2.style.display="none"
+    })
+    
+    Link3.addEventListener("mouseover",()=>{
+     drop3.style.display="block"
+    })
+    Link3.addEventListener("mouseout",()=>{
+    drop3.style.display="none"
+    })
+    
+    Link4.addEventListener("mouseover",()=>{
+     drop4.style.display="block"
+    })
+    Link4.addEventListener("mouseout",()=>{
+    drop4.style.display="none"
+    })
+       </script>
     </section>
+
+   
 </body>
 
 </html>
