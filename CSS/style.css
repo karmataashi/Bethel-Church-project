@@ -10,14 +10,14 @@ body {
     align-items: center;
     height: 100vh;
     font-family: poppins, sans-serif;
-    background-color: white;
+    background-color: rgb(37, 37, 37);
 }
 
 .form {
-    width: 400px;
-    border-radius: 5px;
-    background-color: #7743DB;
-    padding: 5px 10px;
+    width: 600px;
+    border-radius: 8px;
+    background-color:  #3b0d11;
+    padding: 30px 40px;
 }
 
 label {
@@ -30,21 +30,22 @@ label {
 input {
     width: 100%;
     padding: 8px 5px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin-bottom: 10px;
     border: none;
 }
 
 #submit-btn {
     border: none;
-    background-color: #16FF00;
+    background-color: #da2929;
     width: 100%;
     padding: 10px 8px;
     color: white;
     font-weight: bolder;
     text-transform: uppercase;
     cursor: pointer;
-    margin: 9px 0px;
+    margin: 20px 0px;
+    font-variant: small-caps;
 }
 
 p {
