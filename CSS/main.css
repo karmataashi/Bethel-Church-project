@@ -979,7 +979,7 @@ nav {
 
 /* footer ends  */
 
-@media (max-width:1123px) {
+/* @media (max-width:1123px) {
     nav {
         min-height: 10vh;
         position: relative;
@@ -1016,9 +1016,42 @@ nav {
     .head-timings {
         padding-top: 20px;
     }
-}
+} */
 
-@media (max-width:375px) {
+@media (max-width:991px) {
+
+    nav {
+        min-height: 10vh;
+        position: relative;
+    }
+    .nav-logo img {
+        display: flex;
+        margin-left: 0;
+        height: 150px;
+    }
+    .navContainer{
+        display: none;
+
+        
+    }
+    
+    #animated-text {
+        display: none;
+        font-weight: 200px ;
+        font-size: 30px;
+    }
+
+    #join-btn {
+        font-size: 1rem;
+        padding: 7px 20px;
+    }
+
+    .menu-btn {
+        display: block;
+        margin-right: 40px;
+
+        
+    }
 
     .head-timings h3 {
         font-size: 20px;

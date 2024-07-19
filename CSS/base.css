@@ -3,7 +3,7 @@ SO the mostly styles styles for the dedicated pages are present here */
 
 /* this section is for about us  */
 
-*{
+* {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
@@ -31,6 +31,7 @@ body {
 
 /* nav bar styles */
 
+
 nav {
 
     /* border: 1px solid navy; */
@@ -53,9 +54,9 @@ nav {
     overflow: hidden;
 }
 
-/* #logo-talkeko {
+#logo-talkeko {
     color: #BA1200;
-} */
+}
 
 .navContainer {
     margin-right: 250px;
@@ -111,7 +112,7 @@ nav {
 .drop2,
 .drop3 {
     z-index: 99;
-    background-color:dimgray;
+    background-color: dimgray;
     position: absolute;
     display: none;
     padding: 30px 40px;
@@ -135,8 +136,8 @@ nav {
 
 /* hamburger section for the nav bar  */
 .menu-btn {
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
     display: none;
     background-color: #000000;
 
@@ -149,8 +150,8 @@ nav {
     height: 100%;
     width: 240px;
     z-index: 999;
-    background-color: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
+    background-color: rgb(0, 0, 0);
+    backdrop-filter: blur(20px);
     display: none;
     flex-direction: column;
     align-items: center;
@@ -165,7 +166,7 @@ nav {
 .sidebar li a {
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-size: 22px;
+    font-size: 15px;
 }
 
 .sidebar li a:hover {
@@ -236,8 +237,8 @@ nav {
 .aboutus-hero3 {
     background-image: url("/assests/aboutus-mission.jpg");
     height: 50vh;
-    background-position: bottom  ;
-    background-size:cover;
+    background-position: bottom;
+    background-size: cover;
     /* width: 100%; */
     object-fit: cover;
     display: flex;
@@ -248,7 +249,7 @@ nav {
     /* background-color: rgb(247, 238, 228); */
 }
 
-.aboutus-hero3 .mission-title  {
+.aboutus-hero3 .mission-title {
     color: #fff;
     position: relative;
     z-index: 3;
@@ -276,6 +277,7 @@ nav {
     text-align: justify;
     margin: 40px 400px;
 }
+
 .aboutus-hero3::before {
     content: "";
     position: absolute;
@@ -283,8 +285,10 @@ nav {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(20, 20, 20, 0.5); /* Semi-transparent black overlay */
-    z-index: 1; /* Ensure the overlay is above the background but below the text */
+    background: rgba(20, 20, 20, 0.5);
+    /* Semi-transparent black overlay */
+    z-index: 1;
+    /* Ensure the overlay is above the background but below the text */
 }
 
 
@@ -317,7 +321,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
 
 .belief-head h2 {
@@ -337,11 +341,11 @@ nav {
 }
 
 .belief-item-wrapper::-webkit-scrollbar {
-   height: 30px;
-   width: 10px;
+    height: 30px;
+    width: 10px;
 }
 
-.belief-item-wrapper::-webkit-scrollbar-track{
+.belief-item-wrapper::-webkit-scrollbar-track {
     background: #681010;
     /* width: 10px; */
     margin: 0px 800px;
@@ -349,8 +353,8 @@ nav {
 }
 
 .belief-item-wrapper::-webkit-scrollbar-thumb {
-   background: rgb(190, 190, 190);
-   border-radius: 20px;
+    background: rgb(190, 190, 190);
+    border-radius: 20px;
 }
 
 .belief-item-wrapper {
@@ -405,12 +409,13 @@ nav {
     text-align: center;
     /* margin: 0px 700px; */
     padding: 10px 20px;
- /* width: 350px; */
+    /* width: 350px; */
     border: 2px solid black;
     /* font-size: normal; */
     /* font-weight: normal; */
     text-transform: uppercase;
 }
+
 .wrapper-links-aboutus {
     display: flex;
     justify-content: center;
@@ -426,7 +431,7 @@ nav {
     padding: 10px 30px;
     /* border-radius: 8px; */
     font-size: 20px;
-    color:black;
+    color: black;
 }
 
 .links-about-div:hover {
@@ -468,7 +473,7 @@ nav {
 
 /* footer ma bhako bhitra ko top-container */
 .footer-ko-top {
-    padding: 80px ;
+    padding: 80px;
     /* border: 1px solid rgb(55, 0, 255); */
 
 }
@@ -643,7 +648,7 @@ nav {
 
 .heading-kids h2 {
     /* font-weight: 800; */
-    text-transform:uppercase;
+    text-transform: uppercase;
 }
 
 .timing-kids {
@@ -674,7 +679,7 @@ nav {
     text-align: justify;
     /* letter-spacing: 2px; */
     line-height: 28px;
-    
+
 }
 
 .second-text h3 {
@@ -722,7 +727,7 @@ nav {
 .kids-third-videos .manage-kids {
     height: 300px;
     margin: 0px 10px;
-    
+
 }
 
 .kids-third-videos {
@@ -730,7 +735,7 @@ nav {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 /* pastors for the kids ministry styles */
@@ -801,7 +806,7 @@ nav {
     padding: 10px 30px;
     /* border-radius: 8px; */
     font-size: normal;
-    color:black
+    color: black
 }
 
 #youth-contact:hover {
@@ -821,5 +826,344 @@ nav {
 }
 
 /* styles for the youths over. */
+/* styles for contact us  */
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 0px 50px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    background: #222;
+}
+
+.contact .content {
+    max-width: 50vw;
+    text-align: justify;
+
+}
+
+.contact .content h2 {
+    font-size: 3em;
+    color: #fff;
+    font-weight: 700;
+    font-variant: small-caps;
+    padding: 10px 0px;
+}
+
+.contact .content p {
+    color: #fff;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 30px;
+    padding: 10px;
+    letter-spacing: 0.5px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.container .contactinfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contactinfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    cursor: pointer;
+}
+
+.container .contactinfo .box .icon {
+    position: relative;
+    min-width: 60px;
+    height: 60px;
+    /* background: repeating-conic-gradient(from 27.5deg, */
+    /* #000000 0%, #000000 10%,transparent 10%, transparent 50%); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .contactinfo .box .icon::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    /* background: repeating-conic-gradient(from 117.5deg, */
+    /* #01dbc2 0%, #01dbc2 10%,transparent 10%, transparent 50%); */
+}
+
+.container .contactinfo .box .icon::after {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #222;
+}
+
+.container .contactinfo .box .icon b {
+    position: absolute;
+    inset: 8px;
+    background: #3b0d11;
+    z-index: 2;
+}
+
+.container .contactinfo .box .icon i {
+    position: relative;
+    z-index: 1000;
+    color: whitesmoke;
+    font-size: 1.24em;
+}
+
+.container .contactinfo .box .text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-size: 1.1em;
+    color: #fff;
+    font-family: 300;
+}
+
+.container .contactinfo .box .text h3 {
+    font-weight: 500;
+    color: #BA1200;
+}
+
+.container .contactinfo .txt {
+    color: #fff;
+    margin-top: 50px;
+    font-weight: 500;
+    border-left: 50px solid #3b0d11;
+    padding-left: 10px;
+    line-height: 1em;
+}
+
+.container .contactinfo .sci {
+    position: relative;
+    display: flex;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.container .contactinfo .sci li {
+    list-style: none;
+}
+
+.container .contactinfo .sci li a {
+    color: #fff;
+    font-size: 1.5em;
+    transition: 0.25s;
+}
+
+.container .contactinfo .sci li a:hover {
+    color: #a11e29;
+    filter: drop-shadow(0 0 5px#3b0d11);
+}
+
+.container .contactform {
+    position: relative;
+    width: 40%;
+    background: repeating-conic-gradient(from var(--a),
+            #9e101c 0%, #3b0d11 10%, transparent 10%, transparent 50%);
+    animation: animate 6s linear infinite;
+    padding: 60px;
+}
+
+.container .contactform::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-conic-gradient(from var(--a),
+            #a11e1e 0%, #bd1f1f 10%, transparent 10%, transparent 50%);
+    animation: animate 6s linear infinite;
+    animation-delay: -1.5s;
+}
+
+.container .contactform::after {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    border: 20px solid #222;
+    background: #333;
+}
+
+@property --a {
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+
+@keyframes animate {
+    0% {
+        --a: 0deg;
+    }
+
+    100% {
+        --a: 360deg;
+    }
+}
+
+.container .contactform form {
+    position: relative;
+    z-index: 10;
+}
+
+.container .contactform form h2 {
+    font-size: 2em;
+    color: #fff;
+    font-weight: 500;
+    font-variant: small-caps;
+}
+
+.container .contactform form .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.container .contactform form .inputBox input,
+.container .contactform form .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 1.1em;
+    margin: 10px 0;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #680f0f;
+    color: #fff;
+    outline: none;
+    resize: none;
+}
+
+.container .contactform form .inputBox span {
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    padding: 5px 0;
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #fff;
+    transition: 0.5s;
+    font-weight: 600;
+    font-variant: small-caps;
+}
+
+.container .contactform form .inputBox input:focus~span,
+.container .contactform form .inputBox textarea:focus~span,
+.container .contactform form .inputBox input:valid~span,
+.container .contactform form .inputBox textarea:valid~span {
+    color: #ffffff;
+    font-size: 0.9em;
+    transform: translateY(-24px);
+}
+
+.container .contactform form .inputBox input[type="submit"] {
+    width: 100%;
+    background: #BA1200;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+@media(max-width: 991px) {
+    .menu-btn {
+        display: block;
+        margin-right: 40px;
 
 
+    }
+
+    nav {
+        min-height: 10vh;
+        position: relative;
+    }
+
+    .nav-logo img {
+        display: flex;
+        margin-left: 0;
+        height: 150px;
+    }
+
+    .navContainer {
+        display: none;
+
+
+    }
+
+    .contact {
+        padding: 50px;
+    }
+
+    .content,
+    h2 {
+        font-size: 70%;
+    }
+
+    .content,
+    p {
+        font-size: 60%;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container .contactinfo,
+    .container .contactform {
+        width: 100%;
+    }
+
+    .container .contactform {
+        padding: 40px;
+    }
+
+    .container .contactform form {
+        padding: 10px;
+    }
+    #footer  {
+        width: auto;
+    }
+    .footer-bhitra  {
+        display: inline-block;
+        padding: 0 5px;
+        border: none;
+    }
+
+    .Location-timings {
+        display: none;
+    }
+
+    .footerko-links li a{
+        font-size: 10px;
+
+    }
+
+    #lastlink a {
+        font-size: 10px;
+        padding-left: 5px;
+    }
+    .footer-contact span {
+        font-size: 10px;
+    }
+    .footer-ko-bottom p {
+        font-size: 10px;
+        width: 150px;
+        /* padding: 20px 0 ; */
+    }
+    .footer-social-links {
+        gap: 10px;
+        display: block;
+    }
+}

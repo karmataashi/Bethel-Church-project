@@ -7,24 +7,90 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" type="text/css" href="/CSS/contact.css">
+  <link rel="stylesheet" type="text/css" href="/CSS/base.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
+
 </head>
 
 <body>
+  <!-- nav bar for contact -->
+  <nav>
+    <div class="nav-logo"><a href="#">
+        <img src="/assests/bethel_chuurch_logo.png" alt="Bethellogo">
+        <!-- <h2>be<span id="logo-talkeko">t</span>heL</h2> -->
+      </a>
+    </div>
+
+    <div class="navContainer">
+
+
+      <div class="Link4"><a href="#events-container">
+          Events
+        </a>
+      </div>
+      <div class="Link2"><a href="#ministry">
+          Ministries
+          <ul class="drop2">
+            <li> <a href="kids.html">Kid's Ministry</a> </li>
+            <li> <a href="youth.html">Youth Ministry</a> </li>
+            <li> <a href="moms.html">Women's Ministry</a> </li>
+          </ul>
+        </a>
+      </div>
+
+      <div class="Link1"><a href="#aboutus">
+          About
+          <ul class="drop1">
+            <li> <a href="about.html">Who we are</a> </li>
+            <li> <a href="#">Leadership</a> </li>
+            <li> <a href="contactus.html" target="_blank">Contact</a> </li>
+          </ul>
+        </a>
+      </div>
+
+      <div class="Link3"><a href="#location">
+          Location
+          <!-- <ul class="drop3">
+                    <li> <a href="#">Media/Images</a> </li>
+                    <li> <a href="https://youtube.com/@bethela.g.churchguwahati7850?si=LHyc_l5Y_YkzsEva" target="_blank">Watch sermon</a> </li>
+                    <li> <a href="#">Location</a> </li>
+                </ul> -->
+        </a>
+      </div>
+
+      <div class="link5"><a href="index.html" target="_blank">
+          <i class="ri-user-fill" id="admin"></i></a>
+      </div>
+    </div>
+    <img onclick="showMenu()" src="/assests/icons8-menu-50.png" class="menu-btn">
+  </nav>
+
+
+
+
+
+
   <section class="contact">
     <!-- <div class="logo"><a href="#">
         <img src="/assests/bethel_chuurch_logo.png" alt="Bethellogo">
       </a>
     </div> -->
+    <div class="sidebar">
+      <button onclick="closeMenu()" class="close-menu-btn">x</button>
+      <ul>
+          <li><a href="#events-container">Events</a></li>
+          <li><a href="#ministry">Ministries</a></li>
+          <!-- <li><a href="#church-timings">Timing</a></li> -->
+          <li><a href="#aboutus">About</a></li>
+          <li><a href="#location">Location</a></li>
+      </ul>
+  </div>
     <div class="content">
       <h2>Contact Us</h2>
       <p>
-        We are here to help and would love to hear from you! Whether you have questions about our services, need
-        support, or want to get involved, feel free to reach out. Our team is dedicated to assisting you and ensuring
-        your experience with our church is positive and fulfilling.
+        WE'd LOVE TO HEAR FROM YOU!!!
       </p>
     </div>
     <div class="container">
@@ -58,7 +124,7 @@
             <p>Church Service timing:<br> Every Sunday 11am</p>
           </div>
         </div>
-        <h2 class="txt"> Connect with us</h2>
+        <h2 class="txt"> STAY CONNECTED</h2>
         <ul class="sci">
           <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
           <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
@@ -91,6 +157,59 @@
       </div>
     </div>
   </section>
+
+  <script defer>
+
+function showMenu() {
+    const show = document.querySelector('.sidebar');
+    show.style.display = 'flex';
+}
+
+function closeMenu() {
+    const close = document.querySelector('.sidebar');
+    close.style.display = 'none';
+}
+
+ 
+const Link1=document.querySelector(".Link1");
+ const Link2=document.querySelector(".Link2");
+ const Link3=document.querySelector(".Link3");
+ const Link4=document.querySelector(".Link4");
+
+ //All dropdown <ul>
+ const drop1=document.querySelector(".drop1");
+ const drop2=document.querySelector(".drop2");
+ const drop3=document.querySelector(".drop3");
+ const drop4=document.querySelector(".drop4");
+
+Link1.addEventListener("mouseover",()=>{
+  drop1.style.display="block"
+ })
+Link1.addEventListener("mouseout",()=>{
+ drop1.style.display="none"
+})
+
+Link2.addEventListener("mouseover",()=>{
+  drop2.style.display="block"
+ })
+Link2.addEventListener("mouseout",()=>{
+ drop2.style.display="none"
+})
+
+Link3.addEventListener("mouseover",()=>{
+  drop3.style.display="block"
+ })
+Link3.addEventListener("mouseout",()=>{
+ drop3.style.display="none"
+})
+
+Link4.addEventListener("mouseover",()=>{
+  drop4.style.display="block"
+ })
+Link4.addEventListener("mouseout",()=>{
+ drop4.style.display="none"
+})
+  </script>
 </body>
 
 </html>
