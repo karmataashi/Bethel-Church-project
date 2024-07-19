@@ -31,7 +31,6 @@ body {
 
 /* nav bar styles */
 
-
 nav {
 
     /* border: 1px solid navy; */
@@ -102,7 +101,8 @@ nav {
 .Link1 a,
 .Link2 a,
 .Link3 a,
-.Link4 a {
+.Link4 a,
+.link5 a {
     /* list-style: none; */
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -112,7 +112,7 @@ nav {
 .drop2,
 .drop3 {
     z-index: 99;
-    background-color: dimgray;
+    background-color:dimgray;
     position: absolute;
     display: none;
     padding: 30px 40px;
@@ -122,16 +122,10 @@ nav {
     text-align: justify;
 }
 
-
-#admin {
-    /* z-index: 999; */
-    font-size: 30px;
-    color: #BA1200;
-}
-
+/* 
 .link5 a {
     text-decoration: none;
-}
+} */
 
 
 /* hamburger section for the nav bar  */
