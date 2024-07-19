@@ -792,18 +792,18 @@ nav {
     background-color:#BA1200;
 }
 #location {
-    display: flex;
+    /* display: flex; */
 }
 .head-loc {
-    /* height: 20vh; */
+    height: 10vh;
     width: 40vw;
-    font-size: 20px;
+    font-size: 40px;
     color: whitesmoke;
     display: flex;
     justify-content: center;
     align-items: center;
     font-variant: small-caps;
-    text-decoration-line: underline;
+    /* text-decoration-line: underline; */
 }
 
 .loc{
