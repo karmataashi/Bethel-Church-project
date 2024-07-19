@@ -791,6 +791,20 @@ nav {
 #about-contact:hover  {
     background-color:#BA1200;
 }
+#location {
+    display: flex;
+}
+.head-loc {
+    /* height: 20vh; */
+    width: 40vw;
+    font-size: 20px;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-variant: small-caps;
+    text-decoration-line: underline;
+}
 
 .loc{
     height: 50vh;
@@ -1188,5 +1202,9 @@ nav {
     .footer-social-links {
         gap: 10px;
         display: block;
+    }
+    .head-loc{
+        font-size: 12px;
+        /* display: inline-block; */
     }
 }
