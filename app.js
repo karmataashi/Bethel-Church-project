@@ -46,7 +46,13 @@ const verses = [
     '"Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God." - Philippians 4:6',
     '"The Lord is my shepherd; I shall not want." - Psalm 23:1',
     '"For the wages of sin is death, but the gift of God is eternal life in Christ Jesus our Lord." - Romans 6:23',
-    '"I have told you these things, so that in me you may have peace. In this world you will have trouble. But take heart! I have overcome the world." - John 16:33'
+    '"I have told you these things, so that in me you may have peace. In this world you will have trouble. But take heart! I have overcome the world." - John 16:33',
+    '"God is our refuge and strength, an ever-present help in trouble." - Psalm 46:1 (NIV)',
+    '"But those who hope in the Lord will renew their strength. They will soar on wings like eagles; they will run and not grow weary, they will walk and not be faint." - Isaiah 40:31 (NIV)',
+    '"For I am convinced that neither death nor life, neither angels nor demons, neither the present nor the future, nor any powers, neither height nor depth, nor anything else in all creation, will be able to separate us from the love of God that is in Christ Jesus our Lord." - Romans 8:38-39 (NIV)',
+    '"Cast all your anxiety on him because he cares for you." - 1 Peter 5:7 (NIV)',
+    '"For the Spirit God gave us does not make us timid, but gives us power, love and self-discipline." - 2 Timothy 1:7 (NIV)'
+
 ]
 
 
